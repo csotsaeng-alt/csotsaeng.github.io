@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d03551a0a5a00781975ef69c9b7e7fc1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d03551a0a5a00781975ef69c9b7e7fc1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d03551a0a5a00781975ef69c9b7e7fc1 = L.map(
+                "map_d03551a0a5a00781975ef69c9b7e7fc1",
+                {
+                    center: [13.283248, 100.923426],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3d3b7d62e525e5aae7c6f832fa12141b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3d3b7d62e525e5aae7c6f832fa12141b.addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var marker_7052c068599531e38203a5c89453fdde = L.marker(
+                [13.283248, 100.923426],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_7ccb15384c8794df64fb38d0ac570ff4 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#D32F2F;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        S\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_8ff1890f2194d7e5749f3b17aea28a70 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f11a1ae7cc382704c5755a96df9240a5 = $(`<div id="html_f11a1ae7cc382704c5755a96df9240a5" style="width: 100.0%; height: 100.0%;"><b>Depot(Start)</b><br>Visit order: 0<br>(13.283248, 100.923426)</div>`)[0];
+                popup_8ff1890f2194d7e5749f3b17aea28a70.setContent(html_f11a1ae7cc382704c5755a96df9240a5);
+            
+        
+
+        marker_7052c068599531e38203a5c89453fdde.bindPopup(popup_8ff1890f2194d7e5749f3b17aea28a70)
+        ;
+
+        
+    
+    
+            marker_7052c068599531e38203a5c89453fdde.bindTooltip(
+                `<div>
+                     Start Depot | order 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7052c068599531e38203a5c89453fdde.setIcon(div_icon_7ccb15384c8794df64fb38d0ac570ff4);
+            
+    
+            var marker_7c23202e4699cc1213a0ea76cd1d6d64 = L.marker(
+                [13.6696667, 100.9737222],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_ba271dbbcb1b8d79e5cb86d6ebf89200 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        1\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_15b76851ffda4c26132e8f286b5a127e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_bf2f65743a5871c76c3ce60b711708f4 = $(`<div id="html_bf2f65743a5871c76c3ce60b711708f4" style="width: 100.0%; height: 100.0%;"><b>P10</b><br>Visit order: 1<br>(13.669667, 100.973722)</div>`)[0];
+                popup_15b76851ffda4c26132e8f286b5a127e.setContent(html_bf2f65743a5871c76c3ce60b711708f4);
+            
+        
+
+        marker_7c23202e4699cc1213a0ea76cd1d6d64.bindPopup(popup_15b76851ffda4c26132e8f286b5a127e)
+        ;
+
+        
+    
+    
+            marker_7c23202e4699cc1213a0ea76cd1d6d64.bindTooltip(
+                `<div>
+                     P10 | order 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c23202e4699cc1213a0ea76cd1d6d64.setIcon(div_icon_ba271dbbcb1b8d79e5cb86d6ebf89200);
+            
+    
+            var marker_5a0f4b652cb22e27d3cba9f41a99b9ec = L.marker(
+                [13.6707222, 100.9345],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_c5fa78889cc9262bde4e59f8dc1bfb8c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        2\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_d7697c328f1da702bcdb5f845f8921e3 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9ac93e7f32ab937f8d9e787ee8571025 = $(`<div id="html_9ac93e7f32ab937f8d9e787ee8571025" style="width: 100.0%; height: 100.0%;"><b>P3</b><br>Visit order: 2<br>(13.670722, 100.934500)</div>`)[0];
+                popup_d7697c328f1da702bcdb5f845f8921e3.setContent(html_9ac93e7f32ab937f8d9e787ee8571025);
+            
+        
+
+        marker_5a0f4b652cb22e27d3cba9f41a99b9ec.bindPopup(popup_d7697c328f1da702bcdb5f845f8921e3)
+        ;
+
+        
+    
+    
+            marker_5a0f4b652cb22e27d3cba9f41a99b9ec.bindTooltip(
+                `<div>
+                     P3 | order 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5a0f4b652cb22e27d3cba9f41a99b9ec.setIcon(div_icon_c5fa78889cc9262bde4e59f8dc1bfb8c);
+            
+    
+            var marker_3d6eade5375c24865a49c231b90e9b35 = L.marker(
+                [13.6873333, 100.9326944],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_4d6927ebb82ddf0a71b1152c3ce9179e = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        3\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_55cbc695a54227835755241b1a12e133 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_05f0e806516a462215559669e943975f = $(`<div id="html_05f0e806516a462215559669e943975f" style="width: 100.0%; height: 100.0%;"><b>P5</b><br>Visit order: 3<br>(13.687333, 100.932694)</div>`)[0];
+                popup_55cbc695a54227835755241b1a12e133.setContent(html_05f0e806516a462215559669e943975f);
+            
+        
+
+        marker_3d6eade5375c24865a49c231b90e9b35.bindPopup(popup_55cbc695a54227835755241b1a12e133)
+        ;
+
+        
+    
+    
+            marker_3d6eade5375c24865a49c231b90e9b35.bindTooltip(
+                `<div>
+                     P5 | order 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d6eade5375c24865a49c231b90e9b35.setIcon(div_icon_4d6927ebb82ddf0a71b1152c3ce9179e);
+            
+    
+            var marker_0e1c93e46fc4386d7514e120601e4452 = L.marker(
+                [13.6891667, 100.9236111],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_e2419e4777323263f6e76e84953c2c1c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        4\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_c72f50fa0d0e1f4885ad90c822e7f512 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_57d416abb0b82bd55274f0bae96023f3 = $(`<div id="html_57d416abb0b82bd55274f0bae96023f3" style="width: 100.0%; height: 100.0%;"><b>P2</b><br>Visit order: 4<br>(13.689167, 100.923611)</div>`)[0];
+                popup_c72f50fa0d0e1f4885ad90c822e7f512.setContent(html_57d416abb0b82bd55274f0bae96023f3);
+            
+        
+
+        marker_0e1c93e46fc4386d7514e120601e4452.bindPopup(popup_c72f50fa0d0e1f4885ad90c822e7f512)
+        ;
+
+        
+    
+    
+            marker_0e1c93e46fc4386d7514e120601e4452.bindTooltip(
+                `<div>
+                     P2 | order 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e1c93e46fc4386d7514e120601e4452.setIcon(div_icon_e2419e4777323263f6e76e84953c2c1c);
+            
+    
+            var marker_8142a107022af856d9b24509fdf2d25d = L.marker(
+                [13.6838889, 100.8998333],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_09e485c930b36c9c5ba1e600b31cd12b = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        5\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_eb5bbac4354d9aadea8a7525c1c5f3f1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4e816a300bce7aff61111c2c4f00e8c3 = $(`<div id="html_4e816a300bce7aff61111c2c4f00e8c3" style="width: 100.0%; height: 100.0%;"><b>P1</b><br>Visit order: 5<br>(13.683889, 100.899833)</div>`)[0];
+                popup_eb5bbac4354d9aadea8a7525c1c5f3f1.setContent(html_4e816a300bce7aff61111c2c4f00e8c3);
+            
+        
+
+        marker_8142a107022af856d9b24509fdf2d25d.bindPopup(popup_eb5bbac4354d9aadea8a7525c1c5f3f1)
+        ;
+
+        
+    
+    
+            marker_8142a107022af856d9b24509fdf2d25d.bindTooltip(
+                `<div>
+                     P1 | order 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8142a107022af856d9b24509fdf2d25d.setIcon(div_icon_09e485c930b36c9c5ba1e600b31cd12b);
+            
+    
+            var marker_e105f4e1bc3a03ff26832c8e4f20c36d = L.marker(
+                [13.6974722, 100.9179722],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_7a01b6368ff7cd97622e035d8bdb881c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        6\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_e4d376da8f3013c1def87492e0799fa4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_02e88515c3995a2f8cfa1c281b004f6b = $(`<div id="html_02e88515c3995a2f8cfa1c281b004f6b" style="width: 100.0%; height: 100.0%;"><b>P6</b><br>Visit order: 6<br>(13.697472, 100.917972)</div>`)[0];
+                popup_e4d376da8f3013c1def87492e0799fa4.setContent(html_02e88515c3995a2f8cfa1c281b004f6b);
+            
+        
+
+        marker_e105f4e1bc3a03ff26832c8e4f20c36d.bindPopup(popup_e4d376da8f3013c1def87492e0799fa4)
+        ;
+
+        
+    
+    
+            marker_e105f4e1bc3a03ff26832c8e4f20c36d.bindTooltip(
+                `<div>
+                     P6 | order 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e105f4e1bc3a03ff26832c8e4f20c36d.setIcon(div_icon_7a01b6368ff7cd97622e035d8bdb881c);
+            
+    
+            var marker_26affa08b90c5e3c7f0772cecf0cb565 = L.marker(
+                [13.7074444, 100.9466111],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_bf885c9558f95ce794becd05f4a4eeb3 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        7\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_0835a2a02557117909e0c906e3fdcc6c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3c186556a21ab9699e94706275e3731a = $(`<div id="html_3c186556a21ab9699e94706275e3731a" style="width: 100.0%; height: 100.0%;"><b>P4</b><br>Visit order: 7<br>(13.707444, 100.946611)</div>`)[0];
+                popup_0835a2a02557117909e0c906e3fdcc6c.setContent(html_3c186556a21ab9699e94706275e3731a);
+            
+        
+
+        marker_26affa08b90c5e3c7f0772cecf0cb565.bindPopup(popup_0835a2a02557117909e0c906e3fdcc6c)
+        ;
+
+        
+    
+    
+            marker_26affa08b90c5e3c7f0772cecf0cb565.bindTooltip(
+                `<div>
+                     P4 | order 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_26affa08b90c5e3c7f0772cecf0cb565.setIcon(div_icon_bf885c9558f95ce794becd05f4a4eeb3);
+            
+    
+            var marker_8eee44131b77dacf1c67f9cc73abe1c1 = L.marker(
+                [13.7133333, 100.9326667],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_f947e4bc31be7c92cbaddc4dee8d991c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        8\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_1de1961e36a167d42eef77b605a96bd6 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ecce4b97b85036489fa484ba82d1d418 = $(`<div id="html_ecce4b97b85036489fa484ba82d1d418" style="width: 100.0%; height: 100.0%;"><b>P7</b><br>Visit order: 8<br>(13.713333, 100.932667)</div>`)[0];
+                popup_1de1961e36a167d42eef77b605a96bd6.setContent(html_ecce4b97b85036489fa484ba82d1d418);
+            
+        
+
+        marker_8eee44131b77dacf1c67f9cc73abe1c1.bindPopup(popup_1de1961e36a167d42eef77b605a96bd6)
+        ;
+
+        
+    
+    
+            marker_8eee44131b77dacf1c67f9cc73abe1c1.bindTooltip(
+                `<div>
+                     P7 | order 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8eee44131b77dacf1c67f9cc73abe1c1.setIcon(div_icon_f947e4bc31be7c92cbaddc4dee8d991c);
+            
+    
+            var marker_a32a2b5781ce0622a0104acd0337437e = L.marker(
+                [13.721736, 100.934574],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_a6883c65d16f3d9d214592ccfe6c66e3 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        9\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_465e3eca8bd031a453b30ec2fcd9ef84 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_21e36a68e9e2663abd97a748af542300 = $(`<div id="html_21e36a68e9e2663abd97a748af542300" style="width: 100.0%; height: 100.0%;"><b>P8</b><br>Visit order: 9<br>(13.721736, 100.934574)</div>`)[0];
+                popup_465e3eca8bd031a453b30ec2fcd9ef84.setContent(html_21e36a68e9e2663abd97a748af542300);
+            
+        
+
+        marker_a32a2b5781ce0622a0104acd0337437e.bindPopup(popup_465e3eca8bd031a453b30ec2fcd9ef84)
+        ;
+
+        
+    
+    
+            marker_a32a2b5781ce0622a0104acd0337437e.bindTooltip(
+                `<div>
+                     P8 | order 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a32a2b5781ce0622a0104acd0337437e.setIcon(div_icon_a6883c65d16f3d9d214592ccfe6c66e3);
+            
+    
+            var marker_e980df3a1a1b142aec2709c535474cb2 = L.marker(
+                [13.7324444, 100.9508333],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_38c53b863820dd6c240dd010503331ce = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        10\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_3671f4fd5269f8471852b3c21b61d83e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_68e1d0c6ddfa84e73863e80ac2123bc9 = $(`<div id="html_68e1d0c6ddfa84e73863e80ac2123bc9" style="width: 100.0%; height: 100.0%;"><b>P9</b><br>Visit order: 10<br>(13.732444, 100.950833)</div>`)[0];
+                popup_3671f4fd5269f8471852b3c21b61d83e.setContent(html_68e1d0c6ddfa84e73863e80ac2123bc9);
+            
+        
+
+        marker_e980df3a1a1b142aec2709c535474cb2.bindPopup(popup_3671f4fd5269f8471852b3c21b61d83e)
+        ;
+
+        
+    
+    
+            marker_e980df3a1a1b142aec2709c535474cb2.bindTooltip(
+                `<div>
+                     P9 | order 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e980df3a1a1b142aec2709c535474cb2.setIcon(div_icon_38c53b863820dd6c240dd010503331ce);
+            
+    
+            var marker_d907600d29a0dd9aa5f7dbcfdddf9662 = L.marker(
+                [13.862629, 101.01978],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_a1de11df4160fe8a2e161670cb0accb6 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        11\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_55a3da2d201bce9e67cc54c45d4e18ac = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_14ea1805e0f986f9b4ddbbe2e912f5b2 = $(`<div id="html_14ea1805e0f986f9b4ddbbe2e912f5b2" style="width: 100.0%; height: 100.0%;"><b>P14</b><br>Visit order: 11<br>(13.862629, 101.019780)</div>`)[0];
+                popup_55a3da2d201bce9e67cc54c45d4e18ac.setContent(html_14ea1805e0f986f9b4ddbbe2e912f5b2);
+            
+        
+
+        marker_d907600d29a0dd9aa5f7dbcfdddf9662.bindPopup(popup_55a3da2d201bce9e67cc54c45d4e18ac)
+        ;
+
+        
+    
+    
+            marker_d907600d29a0dd9aa5f7dbcfdddf9662.bindTooltip(
+                `<div>
+                     P14 | order 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d907600d29a0dd9aa5f7dbcfdddf9662.setIcon(div_icon_a1de11df4160fe8a2e161670cb0accb6);
+            
+    
+            var marker_5ef4ab02b586b835d1620f10bc28eff9 = L.marker(
+                [13.863957, 101.014313],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_3fa400d6f387c4fb8b76f560a01f00d7 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        12\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_ee9c71ff08552fb4c8158a8a595d8bac = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c5046b972a7590cb3b1d80647d66f912 = $(`<div id="html_c5046b972a7590cb3b1d80647d66f912" style="width: 100.0%; height: 100.0%;"><b>P15</b><br>Visit order: 12<br>(13.863957, 101.014313)</div>`)[0];
+                popup_ee9c71ff08552fb4c8158a8a595d8bac.setContent(html_c5046b972a7590cb3b1d80647d66f912);
+            
+        
+
+        marker_5ef4ab02b586b835d1620f10bc28eff9.bindPopup(popup_ee9c71ff08552fb4c8158a8a595d8bac)
+        ;
+
+        
+    
+    
+            marker_5ef4ab02b586b835d1620f10bc28eff9.bindTooltip(
+                `<div>
+                     P15 | order 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ef4ab02b586b835d1620f10bc28eff9.setIcon(div_icon_3fa400d6f387c4fb8b76f560a01f00d7);
+            
+    
+            var marker_c489f5092409513553c6728d68de693b = L.marker(
+                [13.865272, 100.998059],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_55f5ca075feb88ba5056fa5662688247 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        13\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_0a33f2437ebdd78bb9a9704048f4f823 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d5e0da005a255513604f1c2cdc9b02b5 = $(`<div id="html_d5e0da005a255513604f1c2cdc9b02b5" style="width: 100.0%; height: 100.0%;"><b>P16</b><br>Visit order: 13<br>(13.865272, 100.998059)</div>`)[0];
+                popup_0a33f2437ebdd78bb9a9704048f4f823.setContent(html_d5e0da005a255513604f1c2cdc9b02b5);
+            
+        
+
+        marker_c489f5092409513553c6728d68de693b.bindPopup(popup_0a33f2437ebdd78bb9a9704048f4f823)
+        ;
+
+        
+    
+    
+            marker_c489f5092409513553c6728d68de693b.bindTooltip(
+                `<div>
+                     P16 | order 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c489f5092409513553c6728d68de693b.setIcon(div_icon_55f5ca075feb88ba5056fa5662688247);
+            
+    
+            var marker_10e62409b83197a4f10af6ffd867c02b = L.marker(
+                [13.86014, 100.986405],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_253c861297dd51e3d3e44a75636d145a = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        14\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_33e8cc3dbfbc30272acdd4ed569df199 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d5b72f5451fac37a580b22497a8a5a53 = $(`<div id="html_d5b72f5451fac37a580b22497a8a5a53" style="width: 100.0%; height: 100.0%;"><b>P17</b><br>Visit order: 14<br>(13.860140, 100.986405)</div>`)[0];
+                popup_33e8cc3dbfbc30272acdd4ed569df199.setContent(html_d5b72f5451fac37a580b22497a8a5a53);
+            
+        
+
+        marker_10e62409b83197a4f10af6ffd867c02b.bindPopup(popup_33e8cc3dbfbc30272acdd4ed569df199)
+        ;
+
+        
+    
+    
+            marker_10e62409b83197a4f10af6ffd867c02b.bindTooltip(
+                `<div>
+                     P17 | order 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10e62409b83197a4f10af6ffd867c02b.setIcon(div_icon_253c861297dd51e3d3e44a75636d145a);
+            
+    
+            var marker_6d41055ddcf19966f5475356d0b2c8a2 = L.marker(
+                [13.885998, 100.991142],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_5bd0351df65b652d31d5bea30b205221 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        15\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_b00c881d2741c4ff8fa045f29b61346b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5be5acfd1e14605cd3e8ff91faf272f4 = $(`<div id="html_5be5acfd1e14605cd3e8ff91faf272f4" style="width: 100.0%; height: 100.0%;"><b>P21</b><br>Visit order: 15<br>(13.885998, 100.991142)</div>`)[0];
+                popup_b00c881d2741c4ff8fa045f29b61346b.setContent(html_5be5acfd1e14605cd3e8ff91faf272f4);
+            
+        
+
+        marker_6d41055ddcf19966f5475356d0b2c8a2.bindPopup(popup_b00c881d2741c4ff8fa045f29b61346b)
+        ;
+
+        
+    
+    
+            marker_6d41055ddcf19966f5475356d0b2c8a2.bindTooltip(
+                `<div>
+                     P21 | order 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6d41055ddcf19966f5475356d0b2c8a2.setIcon(div_icon_5bd0351df65b652d31d5bea30b205221);
+            
+    
+            var marker_b35cddbbfe4f48dac87b4add79f2faf1 = L.marker(
+                [13.892654, 101.01149],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_3b3cd046206216a24b31ce54df9c0179 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        16\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_335f6ea96ef3eb104f88d09dd7db6ebf = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_95489376a0a31b76c2d7a3815f7881b3 = $(`<div id="html_95489376a0a31b76c2d7a3815f7881b3" style="width: 100.0%; height: 100.0%;"><b>P19</b><br>Visit order: 16<br>(13.892654, 101.011490)</div>`)[0];
+                popup_335f6ea96ef3eb104f88d09dd7db6ebf.setContent(html_95489376a0a31b76c2d7a3815f7881b3);
+            
+        
+
+        marker_b35cddbbfe4f48dac87b4add79f2faf1.bindPopup(popup_335f6ea96ef3eb104f88d09dd7db6ebf)
+        ;
+
+        
+    
+    
+            marker_b35cddbbfe4f48dac87b4add79f2faf1.bindTooltip(
+                `<div>
+                     P19 | order 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b35cddbbfe4f48dac87b4add79f2faf1.setIcon(div_icon_3b3cd046206216a24b31ce54df9c0179);
+            
+    
+            var marker_c402a532fe32ca27fc8994f1ce1c662c = L.marker(
+                [13.896869, 101.06921],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_fe9aeb20540c903a3bec98c7f09aa7de = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        17\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_ff2a1b95082a1655f787bcd47687822f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2730d526e729e0be4d01adeafb988567 = $(`<div id="html_2730d526e729e0be4d01adeafb988567" style="width: 100.0%; height: 100.0%;"><b>P20</b><br>Visit order: 17<br>(13.896869, 101.069210)</div>`)[0];
+                popup_ff2a1b95082a1655f787bcd47687822f.setContent(html_2730d526e729e0be4d01adeafb988567);
+            
+        
+
+        marker_c402a532fe32ca27fc8994f1ce1c662c.bindPopup(popup_ff2a1b95082a1655f787bcd47687822f)
+        ;
+
+        
+    
+    
+            marker_c402a532fe32ca27fc8994f1ce1c662c.bindTooltip(
+                `<div>
+                     P20 | order 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c402a532fe32ca27fc8994f1ce1c662c.setIcon(div_icon_fe9aeb20540c903a3bec98c7f09aa7de);
+            
+    
+            var marker_ebec80b01bdbf444060bc4eb6ee38b88 = L.marker(
+                [13.870131, 101.055534],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_8438041d43185fb7736cdfadb2a28743 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        18\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_9000a877c400e6366d5262369d4b3f17 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_346bf7c705131e4bbb1b22602ca529bd = $(`<div id="html_346bf7c705131e4bbb1b22602ca529bd" style="width: 100.0%; height: 100.0%;"><b>P13</b><br>Visit order: 18<br>(13.870131, 101.055534)</div>`)[0];
+                popup_9000a877c400e6366d5262369d4b3f17.setContent(html_346bf7c705131e4bbb1b22602ca529bd);
+            
+        
+
+        marker_ebec80b01bdbf444060bc4eb6ee38b88.bindPopup(popup_9000a877c400e6366d5262369d4b3f17)
+        ;
+
+        
+    
+    
+            marker_ebec80b01bdbf444060bc4eb6ee38b88.bindTooltip(
+                `<div>
+                     P13 | order 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ebec80b01bdbf444060bc4eb6ee38b88.setIcon(div_icon_8438041d43185fb7736cdfadb2a28743);
+            
+    
+            var marker_f14789d5c502e670a1118e853fb831c9 = L.marker(
+                [13.871226, 101.072876],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_7ec90fbd55e1509bec4414feb7f20b4e = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        19\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_7cda83970066f6a10ed136212f34540c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0300b3e3aad5cab49ddf1e7c6ec5fed0 = $(`<div id="html_0300b3e3aad5cab49ddf1e7c6ec5fed0" style="width: 100.0%; height: 100.0%;"><b>P12</b><br>Visit order: 19<br>(13.871226, 101.072876)</div>`)[0];
+                popup_7cda83970066f6a10ed136212f34540c.setContent(html_0300b3e3aad5cab49ddf1e7c6ec5fed0);
+            
+        
+
+        marker_f14789d5c502e670a1118e853fb831c9.bindPopup(popup_7cda83970066f6a10ed136212f34540c)
+        ;
+
+        
+    
+    
+            marker_f14789d5c502e670a1118e853fb831c9.bindTooltip(
+                `<div>
+                     P12 | order 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f14789d5c502e670a1118e853fb831c9.setIcon(div_icon_7ec90fbd55e1509bec4414feb7f20b4e);
+            
+    
+            var marker_a410f28a0f00e518d10cd522f81df634 = L.marker(
+                [13.8742, 101.102626],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_6ecaa63c71d30f1770bd66764a7f9c0d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        20\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_cc732e84481590a604116da099c76113 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7660fd36a633d5ddb3e266c4d3624c27 = $(`<div id="html_7660fd36a633d5ddb3e266c4d3624c27" style="width: 100.0%; height: 100.0%;"><b>P18</b><br>Visit order: 20<br>(13.874200, 101.102626)</div>`)[0];
+                popup_cc732e84481590a604116da099c76113.setContent(html_7660fd36a633d5ddb3e266c4d3624c27);
+            
+        
+
+        marker_a410f28a0f00e518d10cd522f81df634.bindPopup(popup_cc732e84481590a604116da099c76113)
+        ;
+
+        
+    
+    
+            marker_a410f28a0f00e518d10cd522f81df634.bindTooltip(
+                `<div>
+                     P18 | order 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a410f28a0f00e518d10cd522f81df634.setIcon(div_icon_6ecaa63c71d30f1770bd66764a7f9c0d);
+            
+    
+            var marker_9886fd5aa22e99cd85a2f649bf60a238 = L.marker(
+                [13.8086111, 101.1909167],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_3b2337b379e11bf4ead3bafc5cb87961 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#0B5ED7;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        21\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_06747283d316f43512f850a77222b9d4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6cd5c019d82045a6b056f184a60ed080 = $(`<div id="html_6cd5c019d82045a6b056f184a60ed080" style="width: 100.0%; height: 100.0%;"><b>P11</b><br>Visit order: 21<br>(13.808611, 101.190917)</div>`)[0];
+                popup_06747283d316f43512f850a77222b9d4.setContent(html_6cd5c019d82045a6b056f184a60ed080);
+            
+        
+
+        marker_9886fd5aa22e99cd85a2f649bf60a238.bindPopup(popup_06747283d316f43512f850a77222b9d4)
+        ;
+
+        
+    
+    
+            marker_9886fd5aa22e99cd85a2f649bf60a238.bindTooltip(
+                `<div>
+                     P11 | order 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9886fd5aa22e99cd85a2f649bf60a238.setIcon(div_icon_3b2337b379e11bf4ead3bafc5cb87961);
+            
+    
+            var marker_c49c2ee44f0fa17366ac08321ab96d0c = L.marker(
+                [13.370646, 100.992694],
+                {
+}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            var div_icon_7c35ce6d8184b1042782563c720ccd1a = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width:36px;height:36px;line-height:36px;\n        background:#FF8F00;color:white;\n        border-radius:18px;\n        text-align:center;\n        font-weight:800;\n        font-size:15px;\n        border:3px solid white;\n        box-shadow:0 2px 6px rgba(0,0,0,0.40);\n        \"\u003e\n        22\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_2999c42c48ee8387c3ca3f10237d8e93 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3669d1463c087f6732c155a0de84dd94 = $(`<div id="html_3669d1463c087f6732c155a0de84dd94" style="width: 100.0%; height: 100.0%;"><b>LAST_STOP</b><br>Visit order: 22<br>(13.370646, 100.992694)</div>`)[0];
+                popup_2999c42c48ee8387c3ca3f10237d8e93.setContent(html_3669d1463c087f6732c155a0de84dd94);
+            
+        
+
+        marker_c49c2ee44f0fa17366ac08321ab96d0c.bindPopup(popup_2999c42c48ee8387c3ca3f10237d8e93)
+        ;
+
+        
+    
+    
+            marker_c49c2ee44f0fa17366ac08321ab96d0c.bindTooltip(
+                `<div>
+                     LAST_STOP | order 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c49c2ee44f0fa17366ac08321ab96d0c.setIcon(div_icon_7c35ce6d8184b1042782563c720ccd1a);
+            
+    
+            var poly_line_e731c88d1e51c7ecfba5a328238910f7 = L.polyline(
+                [[13.283186, 100.923435], [13.283192, 100.92348], [13.283194, 100.923634], [13.283178, 100.923712], [13.283151, 100.923736], [13.283102, 100.923777], [13.283082, 100.923795], [13.283225, 100.924557], [13.28342, 100.925676], [13.283456, 100.925683], [13.283489, 100.9257], [13.283516, 100.925726], [13.283536, 100.925758], [13.284454, 100.925562], [13.285668, 100.925312], [13.286125, 100.925218], [13.28623, 100.925194], [13.286248, 100.925288], [13.286305, 100.925588], [13.286317, 100.925654], [13.286427, 100.926215], [13.286647, 100.927331], [13.286774, 100.927975], [13.286803, 100.928115], [13.286863, 100.928415], [13.28692, 100.928771], [13.286961, 100.929155], [13.28698, 100.930021], [13.286992, 100.930772], [13.287034, 100.931928], [13.287043, 100.932311], [13.287097, 100.934816], [13.287117, 100.935572], [13.287128, 100.936005], [13.287142, 100.936884], [13.287144, 100.937026], [13.287145, 100.937115], [13.287147, 100.937325], [13.287126, 100.937697], [13.287097, 100.937965], [13.28704, 100.938174], [13.286968, 100.938362], [13.286885, 100.93855], [13.2867, 100.938905], [13.286656, 100.939012], [13.286647, 100.939058], [13.286654, 100.939116], [13.286682, 100.939172], [13.286736, 100.939242], [13.287226, 100.939552], [13.287473, 100.939723], [13.287731, 100.939902], [13.2879, 100.940012], [13.287958, 100.940049], [13.288546, 100.940441], [13.288596, 100.940474], [13.289112, 100.940824], [13.289345, 100.940972], [13.289828, 100.941281], [13.290212, 100.941526], [13.290425, 100.94167], [13.291032, 100.942082], [13.291625, 100.942488], [13.291845, 100.942633], [13.292517, 100.943079], [13.292678, 100.943186], [13.293608, 100.943803], [13.293642, 100.943825], [13.294111, 100.944127], [13.294449, 100.944341], [13.294988, 100.944684], [13.295329, 100.944905], [13.296189, 100.945461], [13.29666, 100.945762], [13.296921, 100.945922], [13.297964, 100.946586], [13.298079, 100.946659], [13.299288, 100.94743], [13.301281, 100.9487], [13.302057, 100.949194], [13.302184, 100.949275], [13.303051, 100.949828], [13.304291, 100.950618], [13.304789, 100.950941], [13.305826, 100.951612], [13.305965, 100.951701], [13.306016, 100.951733], [13.306169, 100.951833], [13.306714, 100.952183], [13.306911, 100.952309], [13.307085, 100.952422], [13.307116, 100.952441], [13.307794, 100.952876], [13.308084, 100.953066], [13.30829, 100.953199], [13.308979, 100.953635], [13.309015, 100.953658], [13.309116, 100.953722], [13.309532, 100.953984], [13.309898, 100.954224], [13.31011, 100.954361], [13.310298, 100.954482], [13.310485, 100.954601], [13.310799, 100.954803], [13.311285, 100.955105], [13.311649, 100.955348], [13.312344, 100.955794], [13.312471, 100.955875], [13.312514, 100.955902], [13.312554, 100.955929], [13.31289, 100.956144], [13.313198, 100.956341], [13.313256, 100.956378], [13.313453, 100.956505], [13.314573, 100.957223], [13.314729, 100.957328], [13.314878, 100.957427], [13.314946, 100.957472], [13.314984, 100.957498], [13.314988, 100.957501], [13.315248, 100.957676], [13.315334, 100.95773], [13.316371, 100.958378], [13.316929, 100.958738], [13.317032, 100.958804], [13.317339, 100.959003], [13.318183, 100.959534], [13.318554, 100.959773], [13.319072, 100.960106], [13.319351, 100.960286], [13.31954, 100.960407], [13.319887, 100.96063], [13.320253, 100.960864], [13.320363, 100.960934], [13.320767, 100.961192], [13.320888, 100.961269], [13.320999, 100.96134], [13.321272, 100.961514], [13.32167, 100.961769], [13.321939, 100.96194], [13.322803, 100.962491], [13.322942, 100.962579], [13.324085, 100.963323], [13.324881, 100.963841], [13.325081, 100.96397], [13.32572, 100.964387], [13.327116, 100.965296], [13.327454, 100.965516], [13.32768, 100.965663], [13.328306, 100.966071], [13.328483, 100.966186], [13.328794, 100.966388], [13.329137, 100.966612], [13.329314, 100.966727], [13.329369, 100.966762], [13.330042, 100.967178], [13.330486, 100.967485], [13.330745, 100.967653], [13.331479, 100.968134], [13.331736, 100.968301], [13.332314, 100.968679], [13.332382, 100.968721], [13.332699, 100.968917], [13.333128, 100.969182], [13.333575, 100.969459], [13.333669, 100.969517], [13.333916, 100.96967], [13.3346, 100.97013], [13.334745, 100.970233], [13.334889, 100.970326], [13.335735, 100.970866], [13.335764, 100.970885], [13.335873, 100.970954], [13.33666, 100.971456], [13.337651, 100.97209], [13.337668, 100.9721], [13.339669, 100.973341], [13.339914, 100.973493], [13.340365, 100.973786], [13.340752, 100.974038], [13.341056, 100.974235], [13.341817, 100.97473], [13.341861, 100.97476], [13.341991, 100.974845], [13.342385, 100.9751], [13.343165, 100.975605], [13.343833, 100.976039], [13.344501, 100.976473], [13.344685, 100.976593], [13.345472, 100.977112], [13.345629, 100.977215], [13.346052, 100.977495], [13.348065, 100.978822], [13.349328, 100.979655], [13.349363, 100.979678], [13.349479, 100.979754], [13.349603, 100.979835], [13.351134, 100.980844], [13.352042, 100.981443], [13.352546, 100.981774], [13.352867, 100.981995], [13.352971, 100.982069], [13.353042, 100.98212], [13.353204, 100.982238], [13.353452, 100.982437], [13.353699, 100.982657], [13.354005, 100.982968], [13.354222, 100.983204], [13.354326, 100.983316], [13.354629, 100.983663], [13.354833, 100.98389], [13.355219, 100.98432], [13.355269, 100.984375], [13.355648, 100.984796], [13.355859, 100.984997], [13.356143, 100.985241], [13.356493, 100.985512], [13.356978, 100.985875], [13.357309, 100.986123], [13.357628, 100.986362], [13.357779, 100.986468], [13.35857, 100.987065], [13.358859, 100.987271], [13.359061, 100.987432], [13.359375, 100.987666], [13.359573, 100.987814], [13.360156, 100.98825], [13.361203, 100.989046], [13.361287, 100.989101], [13.361833, 100.989295], [13.362394, 100.989494], [13.363093, 100.989763], [13.3638, 100.990035], [13.364411, 100.99027], [13.364892, 100.990455], [13.365038, 100.990511], [13.365996, 100.990884], [13.366264, 100.990988], [13.366995, 100.991272], [13.3678, 100.991582], [13.368441, 100.991829], [13.368541, 100.991867], [13.369358, 100.992182], [13.369613, 100.99228], [13.370434, 100.992596], [13.370565, 100.992609], [13.370645, 100.992617], [13.370739, 100.992622], [13.371243, 100.992655], [13.37231, 100.992775], [13.372914, 100.992836], [13.373034, 100.992849], [13.373197, 100.992867], [13.373644, 100.992916], [13.373691, 100.992921], [13.374615, 100.993007], [13.374836, 100.993031], [13.375044, 100.993059], [13.375172, 100.99307], [13.375523, 100.993088], [13.375851, 100.993082], [13.376092, 100.993059], [13.376194, 100.993049], [13.376423, 100.993001], [13.376528, 100.992979], [13.37729, 100.992801], [13.377742, 100.992703], [13.37778, 100.992695], [13.378115, 100.992623], [13.378865, 100.992455], [13.379062, 100.992414], [13.379079, 100.992408], [13.379982, 100.9922], [13.380356, 100.992114], [13.380961, 100.991974], [13.381086, 100.99193], [13.381327, 100.991858], [13.381726, 100.991725], [13.382113, 100.991564], [13.38245, 100.991397], [13.382775, 100.991199], [13.38283, 100.991164], [13.383099, 100.990981], [13.383125, 100.990965], [13.38571, 100.989301], [13.386389, 100.98885], [13.386924, 100.988539], [13.387229, 100.988371], [13.387301, 100.988339], [13.387473, 100.988253], [13.387617, 100.988195], [13.387899, 100.988068], [13.388128, 100.987983], [13.388503, 100.98784], [13.388601, 100.987802], [13.389061, 100.987668], [13.389299, 100.987585], [13.389783, 100.987455], [13.390122, 100.987383], [13.390371, 100.987337], [13.39066, 100.987299], [13.391026, 100.987252], [13.391691, 100.987199], [13.391933, 100.987193], [13.392218, 100.987186], [13.392622, 100.98718], [13.392854, 100.987194], [13.393244, 100.987217], [13.394179, 100.987364], [13.394776, 100.987436], [13.39575, 100.987573], [13.396251, 100.987624], [13.396926, 100.987694], [13.39723, 100.987728], [13.398299, 100.98787], [13.39835, 100.987875], [13.398592, 100.987904], [13.398693, 100.987913], [13.399361, 100.987975], [13.39998, 100.988054], [13.400431, 100.988111], [13.401624, 100.988262], [13.401971, 100.988304], [13.402185, 100.988325], [13.402407, 100.988349], [13.402533, 100.988365], [13.402881, 100.988406], [13.403215, 100.988449], [13.403617, 100.9885], [13.40406, 100.988562], [13.404705, 100.988643], [13.40528, 100.988715], [13.406248, 100.988836], [13.406745, 100.98889], [13.407353, 100.988955], [13.408526, 100.989104], [13.409528, 100.989219], [13.410229, 100.989316], [13.410636, 100.98938], [13.41114, 100.989442], [13.411693, 100.989574], [13.412145, 100.989708], [13.412476, 100.989839], [13.412815, 100.989992], [13.413151, 100.990175], [13.413288, 100.990249], [13.413522, 100.990405], [13.413563, 100.990433], [13.413812, 100.990601], [13.414081, 100.990813], [13.414376, 100.991076], [13.414643, 100.991308], [13.415182, 100.991775], [13.41551, 100.99206], [13.415529, 100.992077], [13.41578, 100.9923], [13.416633, 100.993097], [13.41716, 100.99358], [13.417559, 100.993943], [13.418204, 100.994516], [13.420332, 100.996479], [13.42167, 100.997709], [13.422568, 100.9985], [13.423909, 100.999734], [13.42484, 101.000611], [13.425542, 101.001255], [13.426037, 101.001657], [13.426372, 101.001903], [13.426692, 101.002116], [13.427027, 101.002304], [13.42737, 101.002473], [13.427607, 101.002567], [13.427823, 101.002642], [13.428073, 101.002711], [13.428286, 101.002751], [13.428621, 101.002807], [13.428877, 101.002839], [13.429131, 101.002858], [13.429363, 101.002862], [13.429637, 101.002849], [13.429883, 101.002824], [13.430097, 101.002793], [13.430335, 101.002749], [13.430872, 101.002635], [13.434112, 101.001898], [13.434324, 101.001852], [13.440865, 101.000392], [13.442163, 101.0001], [13.445158, 100.999425], [13.446241, 100.99917], [13.448797, 100.998583], [13.453532, 100.997518], [13.457014, 100.996735], [13.458184, 100.996476], [13.459642, 100.996163], [13.460868, 100.995905], [13.461339, 100.995807], [13.461734, 100.995739], [13.462076, 100.995681], [13.462228, 100.995663], [13.462574, 100.995641], [13.462744, 100.995633], [13.463375, 100.995616], [13.464168, 100.995654], [13.464515, 100.995713], [13.464871, 100.995775], [13.465502, 100.995903], [13.466065, 100.99607], [13.466832, 100.996349], [13.467852, 100.996759], [13.469381, 100.997334], [13.470369, 100.997706], [13.473238, 100.998804], [13.473353, 100.998848], [13.475938, 100.999838], [13.478314, 101.000731], [13.480871, 101.001713], [13.484457, 101.003059], [13.488113, 101.004469], [13.4889, 101.004773], [13.488945, 101.004791], [13.48912, 101.004859], [13.490028, 101.005224], [13.490961, 101.005541], [13.491455, 101.005667], [13.492049, 101.005806], [13.492667, 101.005889], [13.49334, 101.005964], [13.494079, 101.005972], [13.494616, 101.005913], [13.495482, 101.005779], [13.49615, 101.005634], [13.496696, 101.005471], [13.497242, 101.005288], [13.497708, 101.005083], [13.498118, 101.00487], [13.49889, 101.004419], [13.499553, 101.003963], [13.500103, 101.003499], [13.500761, 101.00284], [13.501235, 101.002298], [13.501634, 101.001716], [13.503793, 100.998372], [13.503826, 100.998035], [13.504033, 100.997702], [13.504189, 100.997452], [13.504308, 100.99726], [13.504706, 100.996604], [13.50482, 100.996419], [13.504943, 100.996224], [13.505351, 100.99562], [13.506525, 100.993857], [13.506814, 100.993427], [13.50708, 100.993009], [13.507206, 100.992846], [13.507496, 100.992381], [13.508353, 100.99104], [13.508974, 100.990051], [13.508926, 100.989864], [13.508919, 100.989836], [13.508897, 100.989754], [13.508875, 100.989511], [13.508896, 100.989388], [13.508902, 100.989364], [13.508925, 100.989275], [13.508983, 100.989191], [13.509255, 100.988766], [13.509589, 100.988242], [13.510057, 100.987508], [13.510866, 100.98624], [13.510931, 100.986138], [13.511062, 100.985903], [13.511232, 100.985737], [13.511298, 100.985674], [13.511519, 100.985482], [13.511603, 100.985416], [13.511665, 100.985498], [13.512016, 100.985968], [13.513126, 100.987521], [13.513166, 100.987577], [13.513399, 100.987895], [13.514218, 100.989018], [13.514442, 100.989303], [13.514712, 100.989559], [13.515007, 100.989769], [13.515386, 100.990014], [13.517414, 100.99119], [13.517752, 100.991374], [13.51802, 100.991478], [13.51829, 100.99155], [13.518592, 100.991594], [13.519105, 100.991629], [13.520153, 100.991678], [13.525525, 100.991929], [13.527583, 100.992035], [13.53087, 100.992173], [13.531408, 100.992183], [13.53195, 100.99219], [13.532603, 100.99215], [13.534491, 100.992011], [13.534809, 100.991932], [13.535046, 100.991808], [13.535279, 100.991661], [13.536047, 100.991071], [13.536332, 100.990837], [13.536673, 100.99057], [13.538025, 100.989512], [13.538317, 100.989303], [13.538608, 100.989138], [13.538716, 100.989096], [13.539011, 100.989016], [13.53936, 100.988968], [13.539673, 100.988965], [13.540288, 100.989027], [13.541065, 100.989121], [13.54238, 100.989281], [13.542751, 100.989345], [13.545746, 100.989689], [13.545998, 100.989709], [13.546076, 100.989712], [13.546266, 100.989736], [13.546579, 100.989766], [13.546936, 100.989808], [13.547431, 100.989856], [13.54856, 100.989987], [13.548879, 100.990029], [13.549454, 100.990091], [13.549744, 100.990127], [13.550284, 100.990193], [13.550852, 100.990263], [13.551184, 100.990303], [13.551385, 100.990327], [13.551965, 100.990391], [13.552171, 100.990413], [13.552531, 100.990483], [13.552891, 100.990596], [13.553287, 100.9908], [13.553616, 100.990972], [13.554035, 100.991222], [13.554216, 100.991331], [13.555026, 100.991818], [13.55539, 100.992036], [13.555789, 100.992274], [13.556161, 100.992503], [13.556308, 100.992589], [13.557266, 100.993189], [13.558012, 100.993631], [13.559584, 100.994613], [13.560431, 100.995085], [13.561047, 100.995415], [13.562496, 100.996311], [13.563069, 100.996655], [13.563152, 100.996704], [13.563258, 100.996768], [13.563433, 100.996872], [13.563983, 100.997195], [13.564192, 100.997323], [13.564597, 100.997568], [13.565083, 100.997862], [13.565441, 100.998081], [13.565717, 100.998251], [13.566209, 100.998554], [13.566918, 100.99897], [13.567268, 100.999176], [13.567396, 100.999254], [13.567724, 100.999455], [13.567863, 100.99954], [13.568067, 100.999665], [13.568435, 100.99989], [13.568811, 101.00012], [13.568945, 101.000198], [13.569389, 101.000459], [13.570053, 101.000849], [13.57048, 101.001112], [13.571434, 101.001679], [13.572947, 101.002577], [13.573149, 101.002698], [13.573279, 101.002776], [13.573587, 101.00296], [13.574309, 101.003393], [13.574542, 101.003533], [13.575194, 101.003923], [13.576377, 101.004642], [13.576654, 101.004811], [13.577598, 101.005385], [13.578466, 101.005893], [13.578796, 101.006086], [13.578954, 101.006177], [13.57898, 101.006192], [13.579094, 101.006261], [13.579241, 101.006351], [13.579527, 101.006526], [13.579677, 101.006616], [13.579801, 101.00669], [13.580157, 101.006896], [13.580471, 101.00709], [13.581637, 101.007789], [13.581773, 101.00787], [13.582224, 101.008141], [13.582437, 101.008269], [13.582517, 101.008316], [13.5828, 101.008485], [13.582854, 101.008517], [13.583929, 101.009158], [13.584462, 101.009475], [13.584742, 101.009642], [13.585476, 101.010079], [13.585986, 101.010384], [13.586511, 101.010697], [13.586851, 101.010899], [13.586969, 101.01097], [13.587531, 101.011305], [13.58759, 101.01134], [13.587962, 101.011562], [13.588136, 101.011666], [13.588757, 101.012036], [13.589665, 101.012578], [13.589866, 101.012698], [13.590347, 101.012985], [13.590919, 101.013326], [13.591147, 101.013462], [13.591604, 101.013735], [13.591965, 101.013948], [13.592268, 101.014127], [13.592477, 101.014251], [13.592631, 101.014342], [13.59295, 101.014531], [13.59318, 101.014667], [13.5943, 101.015328], [13.595314, 101.015929], [13.595511, 101.016046], [13.595914, 101.016285], [13.596121, 101.01641], [13.596557, 101.016669], [13.596831, 101.016842], [13.596968, 101.016929], [13.597175, 101.01706], [13.597476, 101.017243], [13.598267, 101.017727], [13.598841, 101.018066], [13.598937, 101.018123], [13.601613, 101.019707], [13.601857, 101.01985], [13.602157, 101.020025], [13.602344, 101.020134], [13.602764, 101.02038], [13.603561, 101.020846], [13.605046, 101.021719], [13.605323, 101.021887], [13.605513, 101.022001], [13.606517, 101.022556], [13.606915, 101.022808], [13.609153, 101.024109], [13.610193, 101.024715], [13.610314, 101.024785], [13.616046, 101.028097], [13.616499, 101.028386], [13.617073, 101.02872], [13.619327, 101.030029], [13.620411, 101.030658], [13.620548, 101.030742], [13.620675, 101.030824], [13.621391, 101.03122], [13.621514, 101.031292], [13.621611, 101.031348], [13.622289, 101.031742], [13.624684, 101.033134], [13.625476, 101.033591], [13.625932, 101.033854], [13.626442, 101.034149], [13.626954, 101.034445], [13.628479, 101.035326], [13.628718, 101.035465], [13.629031, 101.035645], [13.629235, 101.035763], [13.629734, 101.036073], [13.630242, 101.036357], [13.630423, 101.036342], [13.630542, 101.036281], [13.630606, 101.036231], [13.630674, 101.036045], [13.630694, 101.035985], [13.630769, 101.03576], [13.630865, 101.03547], [13.631043, 101.034931], [13.631412, 101.03382], [13.631435, 101.03375], [13.631803, 101.032642], [13.631983, 101.032098], [13.632154, 101.031583], [13.632703, 101.029928], [13.633493, 101.027544], [13.63371, 101.026888], [13.633962, 101.026129], [13.634208, 101.025387], [13.634435, 101.024703], [13.634683, 101.023954], [13.635253, 101.022237], [13.635682, 101.020941], [13.635734, 101.020785], [13.635759, 101.020712], [13.636144, 101.019549], [13.636234, 101.019278], [13.636292, 101.019102], [13.636731, 101.017778], [13.636932, 101.017162], [13.637037, 101.01684], [13.637198, 101.016346], [13.637464, 101.015533], [13.637733, 101.014709], [13.637863, 101.014311], [13.637945, 101.014058], [13.637984, 101.013939], [13.63805, 101.013739], [13.638164, 101.013387], [13.638407, 101.012685], [13.63842, 101.012648], [13.638559, 101.012262], [13.638808, 101.011523], [13.638954, 101.010985], [13.639011, 101.010764], [13.639072, 101.0106], [13.639207, 101.010362], [13.639384, 101.010111], [13.639637, 101.009772], [13.63983, 101.009511], [13.640151, 101.009077], [13.640339, 101.008818], [13.640508, 101.008553], [13.64073, 101.008166], [13.640745, 101.008132], [13.640894, 101.007774], [13.641047, 101.007394], [13.641197, 101.007008], [13.641407, 101.006469], [13.641601, 101.00597], [13.641851, 101.005321], [13.641997, 101.004942], [13.642525, 101.003572], [13.642615, 101.003341], [13.642866, 101.002689], [13.643183, 101.001867], [13.643531, 101.000965], [13.643792, 101.000288], [13.643951, 100.999874], [13.644117, 100.999446], [13.644316, 100.998935], [13.644342, 100.998867], [13.644443, 100.998608], [13.644581, 100.998254], [13.644733, 100.997864], [13.644836, 100.9976], [13.645013, 100.997144], [13.645447, 100.99603], [13.645528, 100.995823], [13.645602, 100.995631], [13.645752, 100.995235], [13.645882, 100.99489], [13.645949, 100.99471], [13.64599, 100.994601], [13.646139, 100.994206], [13.646174, 100.994113], [13.646237, 100.993946], [13.646432, 100.993429], [13.64653, 100.993167], [13.646663, 100.992815], [13.6468, 100.992452], [13.647518, 100.990544], [13.647584, 100.990367], [13.647952, 100.989391], [13.648249, 100.988608], [13.648382, 100.988259], [13.648536, 100.987853], [13.649139, 100.986258], [13.64988, 100.984268], [13.650342, 100.983029], [13.650445, 100.98276], [13.650516, 100.982577], [13.650804, 100.981832], [13.650887, 100.981616], [13.651023, 100.981263], [13.651109, 100.981041], [13.651156, 100.980918], [13.651184, 100.980847], [13.65143, 100.98021], [13.651461, 100.980128], [13.651594, 100.979765], [13.651714, 100.979438], [13.651787, 100.979239], [13.651848, 100.979072], [13.652014, 100.978619], [13.652156, 100.97823], [13.652252, 100.977918], [13.6524, 100.97743], [13.652479, 100.977171], [13.652532, 100.976999], [13.652587, 100.976818], [13.652709, 100.976419], [13.652931, 100.975688], [13.65304, 100.97533], [13.653067, 100.975241], [13.653152, 100.974977], [13.653252, 100.974664], [13.653414, 100.974147], [13.653448, 100.97404], [13.653479, 100.973943], [13.653512, 100.973837], [13.653556, 100.973694], [13.653678, 100.973299], [13.653875, 100.972677], [13.653994, 100.9723], [13.654075, 100.972056], [13.654152, 100.971817], [13.654236, 100.971567], [13.654337, 100.971278], [13.654393, 100.971115], [13.65445, 100.970946], [13.654526, 100.970695], [13.654561, 100.970581], [13.6546, 100.970457], [13.654642, 100.970336], [13.65486, 100.969766], [13.655429, 100.968269], [13.655618, 100.968329], [13.655864, 100.968409], [13.656015, 100.96846], [13.65614, 100.968502], [13.656294, 100.968554], [13.656524, 100.968639], [13.656767, 100.968722], [13.65697, 100.968792], [13.657033, 100.968816], [13.65715, 100.968861], [13.658221, 100.969261], [13.658262, 100.969277], [13.658303, 100.969296], [13.658363, 100.969323], [13.658543, 100.969402], [13.658742, 100.969482], [13.65934, 100.969725], [13.65963, 100.969841], [13.659887, 100.969943], [13.660287, 100.970103], [13.660476, 100.970178], [13.66068, 100.970261], [13.660825, 100.970318], [13.661372, 100.970536], [13.661676, 100.970659], [13.662083, 100.970829], [13.662468, 100.970982], [13.662682, 100.971069], [13.663237, 100.971285], [13.663735, 100.971481], [13.664695, 100.971808], [13.665447, 100.972052], [13.665831, 100.972166], [13.666055, 100.972186], [13.66622, 100.972119], [13.66642, 100.971961], [13.666851, 100.971621], [13.667068, 100.971391], [13.66714, 100.971282], [13.667202, 100.971168], [13.667286, 100.970937], [13.667427, 100.970381], [13.667483, 100.970124], [13.667502, 100.970038], [13.667525, 100.969931], [13.667545, 100.969847], [13.667632, 100.969587], [13.667767, 100.969296], [13.667952, 100.968982], [13.668158, 100.968626], [13.668372, 100.968303], [13.668563, 100.968136], [13.668626, 100.968093], [13.668788, 100.968003], [13.668863, 100.967962], [13.669792, 100.967454], [13.670007, 100.967343], [13.670252, 100.967216], [13.670341, 100.967168], [13.670399, 100.967154], [13.67056, 100.967115], [13.670833, 100.967115], [13.671497, 100.967215], [13.67208, 100.967301], [13.672645, 100.967379], [13.672667, 100.967383], [13.67326, 100.967477], [13.673968, 100.967606], [13.67425, 100.967659], [13.67451, 100.967705], [13.674788, 100.967757], [13.675068, 100.967814], [13.67535, 100.967871], [13.676543, 100.968094], [13.677016, 100.96819], [13.677822, 100.968336], [13.677893, 100.96835], [13.678131, 100.968394], [13.678662, 100.968494], [13.67901, 100.968561], [13.679389, 100.968645], [13.679656, 100.968697], [13.680137, 100.968788], [13.681032, 100.968961], [13.681418, 100.969038], [13.682049, 100.969158], [13.682267, 100.969199], [13.682918, 100.969325], [13.683479, 100.969443], [13.683722, 100.969533], [13.683837, 100.969619], [13.683938, 100.969706], [13.68385, 100.969802], [13.683816, 100.969845], [13.683674, 100.970071], [13.683682, 100.970167], [13.68373, 100.970448], [13.683736, 100.970487], [13.683741, 100.970557], [13.683757, 100.970651], [13.68384, 100.971034], [13.683861, 100.971213], [13.683866, 100.971249], [13.68386, 100.971283], [13.683844, 100.971314], [13.68382, 100.971336], [13.683788, 100.971356], [13.682611, 100.971933], [13.682594, 100.971948], [13.68258, 100.971969], [13.682575, 100.971997], [13.682575, 100.972033], [13.682576, 100.972085], [13.682572, 100.972124], [13.682568, 100.972153], [13.682558, 100.972182], [13.682469, 100.972337], [13.682455, 100.972352], [13.682433, 100.972365], [13.682388, 100.972389], [13.682013, 100.972483], [13.681335, 100.972638], [13.680758, 100.972766], [13.680214, 100.972878], [13.680113, 100.972903], [13.680094, 100.972916], [13.680082, 100.972932], [13.680072, 100.972952], [13.680064, 100.97298], [13.680069, 100.973036], [13.680141, 100.973241], [13.680319, 100.973714], [13.680342, 100.973794], [13.680343, 100.973853], [13.680339, 100.973888], [13.680303, 100.973932], [13.680236, 100.973974], [13.680127, 100.974003], [13.678954, 100.974265], [13.677754, 100.974517], [13.677205, 100.974653], [13.676483, 100.974805], [13.676382, 100.974823], [13.676304, 100.974838], [13.676267, 100.974844], [13.676269, 100.974886], [13.676273, 100.974924], [13.676278, 100.974981], [13.676287, 100.975028], [13.676501, 100.975718], [13.676121, 100.975858], [13.675891, 100.975919], [13.675752, 100.975956], [13.675542, 100.976018], [13.675274, 100.976105], [13.675243, 100.975909], [13.675197, 100.975748], [13.675002, 100.975295], [13.674829, 100.974856], [13.674743, 100.974684], [13.674738, 100.974633], [13.674776, 100.974486], [13.674793, 100.974358], [13.674788, 100.97414], [13.674705, 100.9738], [13.674629, 100.973533], [13.674597, 100.973475], [13.674548, 100.973452], [13.673873, 100.973288], [13.673463, 100.973189], [13.67321, 100.973127], [13.67288, 100.973046], [13.67249, 100.97294], [13.67222, 100.972854], [13.671801, 100.972739], [13.671467, 100.972653], [13.670313, 100.972355], [13.670279, 100.972356], [13.670233, 100.972351], [13.67019, 100.97234], [13.670053, 100.972276], [13.670036, 100.972313], [13.670011, 100.972338], [13.669994, 100.972365], [13.669986, 100.972403], [13.669909, 100.972648], [13.669825, 100.972922], [13.6698, 100.973039], [13.669769, 100.973114], [13.669601, 100.973429], [13.669504, 100.973564], [13.66966, 100.973622], [13.6697, 100.973639]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_e731c88d1e51c7ecfba5a328238910f7.bindTooltip(
+                `<div>
+                     Leg 1: Depot(Start) → P10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b1af5ef79c0642da76d2ba75a5932742 = L.polyline(
+                [[13.6697, 100.973639], [13.66966, 100.973622], [13.669504, 100.973564], [13.669601, 100.973429], [13.669769, 100.973114], [13.6698, 100.973039], [13.669825, 100.972922], [13.669909, 100.972648], [13.669986, 100.972403], [13.669994, 100.972365], [13.670011, 100.972338], [13.670036, 100.972313], [13.670053, 100.972276], [13.67019, 100.97234], [13.670233, 100.972351], [13.670279, 100.972356], [13.670313, 100.972355], [13.671467, 100.972653], [13.671801, 100.972739], [13.67222, 100.972854], [13.67249, 100.97294], [13.67288, 100.973046], [13.67321, 100.973127], [13.673463, 100.973189], [13.673873, 100.973288], [13.674548, 100.973452], [13.674597, 100.973475], [13.674629, 100.973533], [13.674705, 100.9738], [13.674788, 100.97414], [13.674793, 100.974358], [13.674776, 100.974486], [13.674738, 100.974633], [13.674743, 100.974684], [13.674829, 100.974856], [13.675002, 100.975295], [13.675197, 100.975748], [13.675243, 100.975909], [13.675274, 100.976105], [13.675542, 100.976018], [13.675752, 100.975956], [13.675891, 100.975919], [13.676121, 100.975858], [13.676501, 100.975718], [13.676287, 100.975028], [13.676278, 100.974981], [13.676273, 100.974924], [13.676269, 100.974886], [13.676267, 100.974844], [13.676304, 100.974838], [13.676382, 100.974823], [13.676483, 100.974805], [13.677205, 100.974653], [13.677754, 100.974517], [13.678954, 100.974265], [13.680127, 100.974003], [13.680236, 100.973974], [13.680303, 100.973932], [13.680339, 100.973888], [13.680343, 100.973853], [13.680342, 100.973794], [13.680319, 100.973714], [13.680141, 100.973241], [13.680069, 100.973036], [13.680064, 100.97298], [13.680072, 100.972952], [13.680082, 100.972932], [13.680094, 100.972916], [13.680113, 100.972903], [13.680214, 100.972878], [13.680758, 100.972766], [13.681335, 100.972638], [13.682013, 100.972483], [13.682388, 100.972389], [13.682433, 100.972365], [13.682455, 100.972352], [13.682469, 100.972337], [13.682558, 100.972182], [13.682568, 100.972153], [13.682572, 100.972124], [13.682576, 100.972085], [13.682575, 100.972033], [13.682575, 100.971997], [13.68258, 100.971969], [13.682594, 100.971948], [13.682611, 100.971933], [13.683788, 100.971356], [13.68382, 100.971336], [13.683844, 100.971314], [13.68386, 100.971283], [13.683866, 100.971249], [13.683861, 100.971213], [13.68384, 100.971034], [13.683757, 100.970651], [13.683741, 100.970557], [13.683736, 100.970487], [13.68373, 100.970448], [13.683682, 100.970167], [13.683674, 100.970071], [13.683816, 100.969845], [13.68385, 100.969802], [13.683938, 100.969706], [13.683837, 100.969619], [13.683722, 100.969533], [13.683479, 100.969443], [13.682918, 100.969325], [13.682267, 100.969199], [13.682049, 100.969158], [13.681418, 100.969038], [13.681032, 100.968961], [13.680137, 100.968788], [13.679656, 100.968697], [13.679389, 100.968645], [13.67901, 100.968561], [13.678662, 100.968494], [13.678131, 100.968394], [13.677893, 100.96835], [13.677822, 100.968336], [13.677016, 100.96819], [13.676543, 100.968094], [13.67535, 100.967871], [13.675068, 100.967814], [13.674788, 100.967757], [13.67451, 100.967705], [13.67425, 100.967659], [13.673968, 100.967606], [13.67326, 100.967477], [13.672667, 100.967383], [13.672645, 100.967379], [13.67208, 100.967301], [13.671497, 100.967215], [13.670833, 100.967115], [13.67056, 100.967115], [13.670399, 100.967154], [13.670341, 100.967168], [13.670369, 100.967084], [13.670402, 100.967019], [13.670533, 100.966814], [13.671455, 100.965369], [13.673041, 100.962912], [13.673395, 100.962363], [13.674495, 100.960622], [13.674552, 100.96065], [13.674578, 100.960654], [13.674606, 100.960651], [13.674641, 100.960638], [13.674909, 100.960391], [13.674954, 100.960334], [13.675032, 100.960182], [13.675084, 100.960052], [13.675162, 100.959806], [13.672921, 100.959009], [13.669707, 100.957851], [13.669595, 100.957827], [13.669475, 100.957806], [13.669358, 100.957776], [13.66923, 100.957722], [13.668683, 100.957511], [13.668606, 100.957479], [13.668202, 100.957317], [13.667914, 100.957197], [13.667451, 100.957019], [13.666985, 100.95684], [13.666279, 100.956569], [13.665943, 100.956439], [13.665464, 100.956254], [13.664565, 100.955908], [13.664629, 100.955761], [13.664901, 100.955124], [13.66491, 100.955103], [13.664943, 100.955026], [13.6651, 100.954661], [13.665212, 100.954393], [13.665573, 100.953538], [13.665786, 100.953051], [13.666208, 100.95204], [13.666267, 100.951902], [13.666312, 100.951797], [13.666394, 100.951606], [13.666515, 100.951323], [13.666631, 100.951053], [13.666835, 100.950575], [13.666842, 100.950561], [13.667071, 100.950104], [13.667273, 100.949687], [13.667342, 100.949545], [13.667411, 100.949395], [13.66756, 100.94907], [13.667594, 100.948994], [13.667717, 100.94873], [13.667956, 100.948155], [13.668304, 100.947408], [13.668391, 100.947222], [13.668458, 100.947029], [13.668576, 100.946633], [13.66859, 100.946592], [13.668681, 100.946263], [13.668836, 100.94572], [13.668849, 100.945674], [13.669129, 100.944708], [13.669187, 100.944508], [13.669197, 100.944383], [13.669221, 100.944303], [13.669303, 100.944024], [13.669401, 100.943685], [13.669615, 100.942969], [13.670189, 100.940992], [13.670538, 100.93977], [13.670767, 100.938956], [13.670831, 100.938707], [13.67096, 100.938301], [13.671041, 100.938058], [13.671154, 100.937786], [13.671299, 100.93744], [13.671399, 100.937201], [13.671449, 100.937091], [13.67175, 100.936429], [13.671775, 100.936374], [13.671924, 100.936046], [13.672037, 100.935798], [13.671478, 100.935558], [13.671287, 100.935478], [13.671074, 100.935393], [13.670923, 100.935339], [13.670829, 100.935264], [13.670724, 100.935168], [13.670698, 100.93511], [13.670685, 100.935036], [13.670678, 100.934963], [13.67067, 100.934925], [13.670663, 100.934887], [13.670633, 100.934842], [13.670577, 100.934783], [13.670558, 100.934772], [13.670666, 100.934578]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_b1af5ef79c0642da76d2ba75a5932742.bindTooltip(
+                `<div>
+                     Leg 2: P10 → P3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0eee8fd4e8d9c7f3ca9f3c88d9e2dc83 = L.polyline(
+                [[13.670666, 100.934578], [13.670558, 100.934772], [13.670577, 100.934783], [13.670633, 100.934842], [13.670663, 100.934887], [13.67067, 100.934925], [13.670678, 100.934963], [13.670685, 100.935036], [13.670698, 100.93511], [13.670724, 100.935168], [13.670829, 100.935264], [13.670923, 100.935339], [13.671074, 100.935393], [13.671287, 100.935478], [13.671478, 100.935558], [13.672037, 100.935798], [13.672079, 100.9357], [13.672381, 100.935031], [13.672719, 100.934379], [13.673247, 100.933357], [13.673269, 100.93331], [13.673326, 100.933186], [13.673586, 100.93263], [13.673904, 100.931949], [13.67407, 100.931587], [13.674348, 100.930971], [13.674457, 100.930729], [13.674491, 100.930653], [13.674777, 100.929967], [13.675126, 100.929007], [13.679165, 100.930652], [13.679221, 100.930668], [13.679266, 100.930664], [13.679298, 100.930647], [13.679464, 100.930454], [13.679489, 100.930439], [13.679518, 100.930432], [13.679554, 100.930429], [13.679594, 100.930436], [13.680762, 100.930916], [13.680957, 100.930996], [13.681206, 100.931098], [13.681298, 100.931136], [13.681407, 100.931178], [13.681201, 100.931831], [13.6812, 100.931856], [13.681208, 100.931877], [13.681224, 100.931895], [13.681245, 100.931907], [13.68175, 100.932112], [13.682438, 100.932388], [13.683342, 100.932756], [13.684789, 100.93333], [13.686212, 100.933929], [13.686676, 100.932797], [13.686728, 100.932615], [13.686813, 100.932317], [13.687157, 100.932406]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_0eee8fd4e8d9c7f3ca9f3c88d9e2dc83.bindTooltip(
+                `<div>
+                     Leg 3: P3 → P5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_340821510511709a767539066899ba74 = L.polyline(
+                [[13.687157, 100.932406], [13.686813, 100.932317], [13.686916, 100.931959], [13.686929, 100.931915], [13.686926, 100.931766], [13.686925, 100.931749], [13.686929, 100.931592], [13.686912, 100.931527], [13.686834, 100.931355], [13.686866, 100.931339], [13.686993, 100.93127], [13.687146, 100.931217], [13.687122, 100.931098], [13.687089, 100.930984], [13.687055, 100.930815], [13.68704, 100.930647], [13.687038, 100.930562], [13.687053, 100.930494], [13.687211, 100.930108], [13.687418, 100.929684], [13.687456, 100.929577], [13.687465, 100.929498], [13.687469, 100.92947], [13.687502, 100.929301], [13.687514, 100.929256], [13.687649, 100.928752], [13.687807, 100.928228], [13.688031, 100.927555], [13.688283, 100.926837], [13.688469, 100.926332], [13.688512, 100.926235], [13.688543, 100.92617], [13.688571, 100.926105], [13.688592, 100.926054], [13.688618, 100.926004], [13.68853, 100.925955], [13.688454, 100.925918], [13.688687, 100.925374], [13.689248, 100.92387], [13.689322, 100.923673]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_340821510511709a767539066899ba74.bindTooltip(
+                `<div>
+                     Leg 4: P5 → P2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9274ee31dadc73af48a3dc9588f27a08 = L.polyline(
+                [[13.689322, 100.923673], [13.689639, 100.92283], [13.690396, 100.920835], [13.690706, 100.920051], [13.690737, 100.919921], [13.690737, 100.919853], [13.690724, 100.919773], [13.690702, 100.919705], [13.690194, 100.91866], [13.690156, 100.918589], [13.690114, 100.918525], [13.689741, 100.918193], [13.689445, 100.917982], [13.689315, 100.917879], [13.689243, 100.917798], [13.68923, 100.917737], [13.689239, 100.917677], [13.690257, 100.914751], [13.690271, 100.914717], [13.69027, 100.914701], [13.690266, 100.914688], [13.690258, 100.914666], [13.690249, 100.914652], [13.690079, 100.914482], [13.689849, 100.914309], [13.689718, 100.914211], [13.689514, 100.913997], [13.68943, 100.913909], [13.68935, 100.913837], [13.689279, 100.913786], [13.689179, 100.913727], [13.689055, 100.913678], [13.688968, 100.913651], [13.688886, 100.913635], [13.688375, 100.913537], [13.688207, 100.913487], [13.688072, 100.913429], [13.6879, 100.913336], [13.687884, 100.913328], [13.687753, 100.913237], [13.687629, 100.913124], [13.687503, 100.913001], [13.68739, 100.912879], [13.687256, 100.912723], [13.687044, 100.912475], [13.686605, 100.911943], [13.686398, 100.911666], [13.686153, 100.911319], [13.686065, 100.911157], [13.685978, 100.910941], [13.685888, 100.910678], [13.685698, 100.91026], [13.685296, 100.909577], [13.685403, 100.909593], [13.685498, 100.90959], [13.685696, 100.90955], [13.685899, 100.909495], [13.686441, 100.909315], [13.686842, 100.909152], [13.687085, 100.909059], [13.68721, 100.908985], [13.687272, 100.908947], [13.687307, 100.908925], [13.687687, 100.90855], [13.687726, 100.908482], [13.687748, 100.908422], [13.687778, 100.908339], [13.688141, 100.907336], [13.688517, 100.906342], [13.688552, 100.906247], [13.688718, 100.905787], [13.688928, 100.905175], [13.689027, 100.904878], [13.689146, 100.904521], [13.689245, 100.904262], [13.689365, 100.903944], [13.689535, 100.903582], [13.689553, 100.903542], [13.689557, 100.903532], [13.689657, 100.90329], [13.689775, 100.902976], [13.69004, 100.902155], [13.690367, 100.901183], [13.690272, 100.9012], [13.690176, 100.901211], [13.690079, 100.901206], [13.689975, 100.901182], [13.688691, 100.900702], [13.686998, 100.900059], [13.684289, 100.899059], [13.683963, 100.898938], [13.6837, 100.899704], [13.683701, 100.899757], [13.683715, 100.899805], [13.683761, 100.899899]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_9274ee31dadc73af48a3dc9588f27a08.bindTooltip(
+                `<div>
+                     Leg 5: P2 → P1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9d7c9cc6b246dcbbb4fc902f09bbfcce = L.polyline(
+                [[13.683761, 100.899899], [13.683715, 100.899805], [13.683701, 100.899757], [13.6837, 100.899704], [13.683963, 100.898938], [13.684289, 100.899059], [13.686998, 100.900059], [13.688691, 100.900702], [13.689975, 100.901182], [13.690079, 100.901206], [13.690176, 100.901211], [13.690272, 100.9012], [13.690367, 100.901183], [13.690497, 100.90083], [13.690705, 100.900266], [13.690955, 100.899643], [13.691055, 100.899342], [13.691245, 100.898827], [13.691552, 100.897975], [13.691894, 100.897157], [13.691961, 100.89707], [13.692057, 100.896997], [13.692172, 100.896917], [13.692261, 100.896863], [13.692506, 100.897091], [13.692785, 100.897325], [13.693595, 100.897941], [13.694104, 100.89834], [13.694351, 100.898534], [13.694445, 100.898608], [13.694846, 100.898924], [13.695108, 100.89913], [13.695186, 100.899192], [13.695264, 100.899252], [13.695281, 100.899266], [13.695401, 100.89936], [13.695586, 100.899505], [13.695865, 100.899722], [13.695987, 100.89983], [13.69611, 100.899912], [13.696204, 100.899956], [13.696283, 100.899993], [13.696501, 100.900069], [13.697364, 100.900367], [13.697465, 100.900402], [13.697639, 100.900458], [13.697654, 100.900463], [13.697824, 100.900516], [13.698014, 100.900595], [13.698229, 100.900712], [13.698353, 100.900805], [13.698426, 100.900854], [13.69849, 100.900897], [13.698552, 100.900939], [13.699363, 100.90157], [13.699564, 100.901725], [13.699688, 100.901822], [13.699965, 100.902037], [13.700754, 100.902704], [13.700867, 100.902879], [13.70089, 100.902943], [13.700915, 100.903012], [13.700923, 100.903146], [13.700938, 100.9037], [13.70097, 100.904507], [13.701009, 100.904655], [13.701094, 100.904794], [13.701361, 100.905084], [13.701679, 100.905406], [13.702301, 100.905948], [13.702492, 100.906053], [13.702561, 100.906091], [13.702883, 100.906269], [13.702734, 100.906495], [13.702417, 100.906911], [13.702077, 100.907372], [13.702058, 100.907412], [13.702069, 100.907475], [13.702142, 100.907578], [13.702254, 100.907694], [13.702278, 100.907746], [13.702269, 100.907805], [13.702237, 100.907857], [13.702305, 100.907925], [13.702399, 100.90801], [13.702528, 100.908106], [13.702736, 100.908283], [13.702794, 100.908338], [13.702822, 100.908391], [13.702786, 100.908461], [13.702392, 100.908928], [13.70194, 100.909463], [13.701598, 100.909877], [13.701053, 100.910498], [13.700591, 100.911072], [13.700159, 100.911571], [13.699632, 100.91222], [13.699096, 100.912842], [13.699075, 100.912867], [13.698529, 100.913512], [13.698191, 100.91393], [13.69805, 100.914104], [13.697546, 100.91467], [13.697485, 100.914744], [13.697454, 100.91478], [13.697676, 100.914943], [13.697728, 100.914977], [13.697803, 100.915026], [13.697976, 100.915138], [13.698368, 100.915404], [13.698464, 100.915471], [13.698666, 100.915612], [13.698777, 100.91569], [13.698865, 100.915757], [13.699104, 100.915942], [13.6992, 100.916021], [13.699239, 100.916053], [13.698791, 100.916583], [13.698491, 100.916935], [13.698347, 100.917105], [13.698202, 100.917275], [13.697783, 100.917784], [13.697663, 100.91793], [13.697624, 100.917977], [13.697582, 100.918044]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_9d7c9cc6b246dcbbb4fc902f09bbfcce.bindTooltip(
+                `<div>
+                     Leg 6: P1 → P6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2dd1c459a826b6b750148e47506e3b0a = L.polyline(
+                [[13.697582, 100.918044], [13.697624, 100.917977], [13.697663, 100.91793], [13.697783, 100.917784], [13.698202, 100.917275], [13.698347, 100.917105], [13.698491, 100.916935], [13.698791, 100.916583], [13.699239, 100.916053], [13.6992, 100.916021], [13.699104, 100.915942], [13.698865, 100.915757], [13.698777, 100.91569], [13.698666, 100.915612], [13.698464, 100.915471], [13.698368, 100.915404], [13.697976, 100.915138], [13.697803, 100.915026], [13.697728, 100.914977], [13.697676, 100.914943], [13.697454, 100.91478], [13.697485, 100.914744], [13.697546, 100.91467], [13.69805, 100.914104], [13.698191, 100.91393], [13.698529, 100.913512], [13.699075, 100.912867], [13.699096, 100.912842], [13.699632, 100.91222], [13.700159, 100.911571], [13.700591, 100.911072], [13.701053, 100.910498], [13.701598, 100.909877], [13.70194, 100.909463], [13.702392, 100.908928], [13.702786, 100.908461], [13.702822, 100.908391], [13.702794, 100.908338], [13.702736, 100.908283], [13.702528, 100.908106], [13.702399, 100.90801], [13.702305, 100.907925], [13.702237, 100.907857], [13.702269, 100.907805], [13.702278, 100.907746], [13.702254, 100.907694], [13.702142, 100.907578], [13.702069, 100.907475], [13.702058, 100.907412], [13.702077, 100.907372], [13.702417, 100.906911], [13.702734, 100.906495], [13.702883, 100.906269], [13.70346, 100.906627], [13.703492, 100.906645], [13.70388, 100.906954], [13.704217, 100.907289], [13.705054, 100.908144], [13.706575, 100.909808], [13.706843, 100.910068], [13.707654, 100.910918], [13.708593, 100.911902], [13.709984, 100.913341], [13.710606, 100.914007], [13.711738, 100.915227], [13.71266, 100.916239], [13.713236, 100.916871], [13.713293, 100.916936], [13.71332, 100.91697], [13.713407, 100.917065], [13.713489, 100.917146], [13.713462, 100.917336], [13.71332, 100.918407], [13.713191, 100.919349], [13.713067, 100.920331], [13.713015, 100.920807], [13.712977, 100.921239], [13.712907, 100.921836], [13.712876, 100.922054], [13.7128, 100.922579], [13.71279, 100.92271], [13.712812, 100.922812], [13.712848, 100.922944], [13.712868, 100.923016], [13.712873, 100.92309], [13.712863, 100.923164], [13.71283, 100.923461], [13.712807, 100.923618], [13.712698, 100.924475], [13.712628, 100.925072], [13.712593, 100.925368], [13.712392, 100.926842], [13.712399, 100.926889], [13.71243, 100.926947], [13.712611, 100.927169], [13.712769, 100.927397], [13.712822, 100.927514], [13.712869, 100.927668], [13.712924, 100.9279], [13.713027, 100.928396], [13.713177, 100.929028], [13.713224, 100.929288], [13.713239, 100.929424], [13.713244, 100.929554], [13.713251, 100.929636], [13.713267, 100.929767], [13.713355, 100.930069], [13.713429, 100.930231], [13.71357, 100.930375], [13.714287, 100.931146], [13.714429, 100.931303], [13.71435, 100.931485], [13.714301, 100.931625], [13.714283, 100.931692], [13.71425, 100.931838], [13.71423, 100.931921], [13.714193, 100.931993], [13.714152, 100.932047], [13.71385, 100.932339], [13.713558, 100.932649], [13.713329, 100.932858], [13.71289, 100.93323], [13.712635, 100.933427], [13.712584, 100.933481], [13.712428, 100.933744], [13.712349, 100.933877], [13.712311, 100.933941], [13.711718, 100.935023], [13.711674, 100.935104], [13.711636, 100.935173], [13.711585, 100.935267], [13.711538, 100.935352], [13.711425, 100.935577], [13.711273, 100.935561], [13.711147, 100.935547], [13.711132, 100.935637], [13.711097, 100.935935], [13.711059, 100.9362], [13.711006, 100.936624], [13.710957, 100.937002], [13.710908, 100.937363], [13.710864, 100.937757], [13.710829, 100.937993], [13.710792, 100.938282], [13.710761, 100.938518], [13.71071, 100.93894], [13.71063, 100.939557], [13.710588, 100.93993], [13.71056, 100.940158], [13.71054, 100.940285], [13.710478, 100.940799], [13.710413, 100.941356], [13.710373, 100.941618], [13.710331, 100.941994], [13.710332, 100.942124], [13.710325, 100.942206], [13.710287, 100.942381], [13.710236, 100.942707], [13.710232, 100.942835], [13.710224, 100.942911], [13.710198, 100.943016], [13.710117, 100.943674], [13.710025, 100.944412], [13.70999, 100.944742], [13.70999, 100.94482], [13.71, 100.944858], [13.710022, 100.944903], [13.710022, 100.944951], [13.710005, 100.94499], [13.709949, 100.945135], [13.709905, 100.94538], [13.709886, 100.945791], [13.709841, 100.945785], [13.709745, 100.945771], [13.709714, 100.945768], [13.709621, 100.945756], [13.709568, 100.945747], [13.709551, 100.945744], [13.709488, 100.945736], [13.709405, 100.945711], [13.70934, 100.945684], [13.709311, 100.945672], [13.709179, 100.945607], [13.709012, 100.945524], [13.708931, 100.94549], [13.708897, 100.945482], [13.708866, 100.94548], [13.708839, 100.945488], [13.70882, 100.945498], [13.708738, 100.945605], [13.708725, 100.945615], [13.708712, 100.945619], [13.708685, 100.945625], [13.708667, 100.945617], [13.708605, 100.945575], [13.708471, 100.945461], [13.708443, 100.945448], [13.70842, 100.945448], [13.708398, 100.94546], [13.708383, 100.945478], [13.708172, 100.945763], [13.707963, 100.946077], [13.70768, 100.946544], [13.707576, 100.946703]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_2dd1c459a826b6b750148e47506e3b0a.bindTooltip(
+                `<div>
+                     Leg 7: P6 → P4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cbc9a3fa6aad8c66b9fe250b5728bbcf = L.polyline(
+                [[13.707576, 100.946703], [13.70768, 100.946544], [13.707963, 100.946077], [13.708172, 100.945763], [13.708383, 100.945478], [13.708398, 100.94546], [13.70842, 100.945448], [13.708443, 100.945448], [13.708471, 100.945461], [13.708605, 100.945575], [13.708667, 100.945617], [13.708685, 100.945625], [13.708712, 100.945619], [13.708725, 100.945615], [13.708738, 100.945605], [13.70882, 100.945498], [13.708839, 100.945488], [13.708866, 100.94548], [13.708897, 100.945482], [13.708931, 100.94549], [13.709012, 100.945524], [13.709179, 100.945607], [13.709311, 100.945672], [13.70934, 100.945684], [13.709405, 100.945711], [13.709488, 100.945736], [13.709551, 100.945744], [13.709568, 100.945747], [13.709621, 100.945756], [13.709714, 100.945768], [13.709745, 100.945771], [13.709841, 100.945785], [13.709886, 100.945791], [13.709905, 100.94538], [13.709949, 100.945135], [13.710005, 100.94499], [13.710022, 100.944951], [13.710022, 100.944903], [13.71, 100.944858], [13.70999, 100.94482], [13.70999, 100.944742], [13.710025, 100.944412], [13.710117, 100.943674], [13.710198, 100.943016], [13.710224, 100.942911], [13.710232, 100.942835], [13.710236, 100.942707], [13.710287, 100.942381], [13.710325, 100.942206], [13.710332, 100.942124], [13.710331, 100.941994], [13.710373, 100.941618], [13.710413, 100.941356], [13.710478, 100.940799], [13.71054, 100.940285], [13.71056, 100.940158], [13.710588, 100.93993], [13.71063, 100.939557], [13.71071, 100.93894], [13.710761, 100.938518], [13.710792, 100.938282], [13.710829, 100.937993], [13.710864, 100.937757], [13.710908, 100.937363], [13.710957, 100.937002], [13.711006, 100.936624], [13.711059, 100.9362], [13.711097, 100.935935], [13.711132, 100.935637], [13.711147, 100.935547], [13.711273, 100.935561], [13.711425, 100.935577], [13.711538, 100.935352], [13.711585, 100.935267], [13.711636, 100.935173], [13.711674, 100.935104], [13.711718, 100.935023], [13.712311, 100.933941], [13.712349, 100.933877], [13.712428, 100.933744], [13.712584, 100.933481], [13.712635, 100.933427], [13.71289, 100.93323], [13.713329, 100.932858], [13.713423, 100.932772]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_cbc9a3fa6aad8c66b9fe250b5728bbcf.bindTooltip(
+                `<div>
+                     Leg 8: P4 → P7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fb24d3825a1406f8194a469afcc63967 = L.polyline(
+                [[13.713423, 100.932772], [13.713558, 100.932649], [13.71385, 100.932339], [13.713956, 100.932483], [13.714028, 100.932575], [13.714111, 100.932661], [13.714252, 100.932774], [13.714261, 100.932781], [13.714392, 100.932885], [13.714592, 100.933038], [13.714785, 100.933186], [13.715087, 100.933412], [13.715488, 100.933684], [13.715863, 100.93395], [13.716433, 100.934341], [13.716659, 100.934496], [13.716898, 100.934659], [13.717168, 100.934801], [13.717549, 100.934946], [13.717604, 100.934965], [13.717793, 100.935042], [13.718011, 100.935158], [13.718253, 100.935333], [13.7184, 100.935447], [13.718531, 100.935563], [13.718658, 100.935705], [13.71895, 100.936088], [13.719136, 100.936339], [13.719442, 100.936758], [13.719729, 100.937188], [13.71981, 100.9371], [13.720071, 100.936816], [13.72028, 100.936587], [13.72082, 100.935966], [13.721093, 100.935649], [13.721416, 100.93527], [13.721892, 100.934716]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_fb24d3825a1406f8194a469afcc63967.bindTooltip(
+                `<div>
+                     Leg 9: P7 → P8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0d777c94ffaf9e6e6f1e30a0b9fbb669 = L.polyline(
+                [[13.721892, 100.934716], [13.721416, 100.93527], [13.721093, 100.935649], [13.72082, 100.935966], [13.72028, 100.936587], [13.720071, 100.936816], [13.71981, 100.9371], [13.719729, 100.937188], [13.719901, 100.937456], [13.720091, 100.937704], [13.720172, 100.937805], [13.720323, 100.937973], [13.720531, 100.938174], [13.720674, 100.938299], [13.720703, 100.938323], [13.720801, 100.938392], [13.720971, 100.938511], [13.720995, 100.938527], [13.721461, 100.938911], [13.721719, 100.939124], [13.721899, 100.939277], [13.721913, 100.939289], [13.722068, 100.93942], [13.722429, 100.939716], [13.722682, 100.939923], [13.723304, 100.940471], [13.72341, 100.940567], [13.723562, 100.940711], [13.72379, 100.940913], [13.724173, 100.941262], [13.724383, 100.941454], [13.724449, 100.94151], [13.72483, 100.94186], [13.725492, 100.942457], [13.725742, 100.94269], [13.725877, 100.942822], [13.726363, 100.943294], [13.727385, 100.944328], [13.72784, 100.944788], [13.727921, 100.944869], [13.727978, 100.944923], [13.728418, 100.945336], [13.729823, 100.946662], [13.73002, 100.946848], [13.730401, 100.947219], [13.730657, 100.947484], [13.730967, 100.947798], [13.73115, 100.94797], [13.731586, 100.948405], [13.731811, 100.94863], [13.732152, 100.948959], [13.732568, 100.949359], [13.732912, 100.949676], [13.733132, 100.949879], [13.733018, 100.950008], [13.732892, 100.950127], [13.732928, 100.950161], [13.732887, 100.950289], [13.732886, 100.950657]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_0d777c94ffaf9e6e6f1e30a0b9fbb669.bindTooltip(
+                `<div>
+                     Leg 10: P8 → P9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1d7882d1eb581a67751ce5beda1416d1 = L.polyline(
+                [[13.732886, 100.950657], [13.732887, 100.950289], [13.732928, 100.950161], [13.732892, 100.950127], [13.733018, 100.950008], [13.733132, 100.949879], [13.733308, 100.949686], [13.733848, 100.949011], [13.73406, 100.948773], [13.734162, 100.948657], [13.734544, 100.948208], [13.734703, 100.947995], [13.735363, 100.947111], [13.735988, 100.946352], [13.737468, 100.944584], [13.737596, 100.944444], [13.737682, 100.944356], [13.737748, 100.944251], [13.737834, 100.944047], [13.737886, 100.943964], [13.738045, 100.943779], [13.738252, 100.943522], [13.738464, 100.943293], [13.738648, 100.943091], [13.738721, 100.943037], [13.73881, 100.943005], [13.739333, 100.942901], [13.73943, 100.942858], [13.739469, 100.942815], [13.739507, 100.942774], [13.739554, 100.942663], [13.739564, 100.942592], [13.739548, 100.942519], [13.739431, 100.942373], [13.739291, 100.942231], [13.738937, 100.941853], [13.738512, 100.941364], [13.738694, 100.941174], [13.739407, 100.941825], [13.74009, 100.942477], [13.740254, 100.942631], [13.740975, 100.943274], [13.741124, 100.943415], [13.741407, 100.943683], [13.74191, 100.944157], [13.742271, 100.944499], [13.743765, 100.945909], [13.743925, 100.94606], [13.744865, 100.946948], [13.745628, 100.947668], [13.745854, 100.947885], [13.745973, 100.947996], [13.746068, 100.948085], [13.746229, 100.948236], [13.746715, 100.948695], [13.747342, 100.949288], [13.74767, 100.949597], [13.748385, 100.950272], [13.748517, 100.950397], [13.749429, 100.951295], [13.749597, 100.951454], [13.749973, 100.951812], [13.750308, 100.952129], [13.750367, 100.952186], [13.750449, 100.952262], [13.750578, 100.952375], [13.750791, 100.95258], [13.751211, 100.952971], [13.751295, 100.953048], [13.751521, 100.953272], [13.752045, 100.953744], [13.752082, 100.953778], [13.752401, 100.954065], [13.75273, 100.954374], [13.75285, 100.954486], [13.753355, 100.954957], [13.753835, 100.95542], [13.753935, 100.955514], [13.754825, 100.956364], [13.75529, 100.956779], [13.755764, 100.957202], [13.756205, 100.957559], [13.756557, 100.957844], [13.756909, 100.958128], [13.757719, 100.958782], [13.757934, 100.958957], [13.758747, 100.959613], [13.758986, 100.959805], [13.759421, 100.960155], [13.760217, 100.960796], [13.760307, 100.960868], [13.760485, 100.961011], [13.7607, 100.961185], [13.76079, 100.961257], [13.76094, 100.961378], [13.761157, 100.961553], [13.761389, 100.96174], [13.762207, 100.962403], [13.762515, 100.962652], [13.762957, 100.96301], [13.762993, 100.96304], [13.763416, 100.963383], [13.763524, 100.963471], [13.763812, 100.963705], [13.763859, 100.963743], [13.763964, 100.963829], [13.764434, 100.964211], [13.76468, 100.964411], [13.764954, 100.964635], [13.765324, 100.964935], [13.765428, 100.965019], [13.765563, 100.965135], [13.765675, 100.965232], [13.765951, 100.965457], [13.766168, 100.965632], [13.766333, 100.965765], [13.76673, 100.966087], [13.76708, 100.96637], [13.767256, 100.966512], [13.767322, 100.966566], [13.767493, 100.966706], [13.767794, 100.966953], [13.767865, 100.967011], [13.767956, 100.967086], [13.768519, 100.967546], [13.768851, 100.967816], [13.768912, 100.967866], [13.769266, 100.968155], [13.769278, 100.968166], [13.769585, 100.968417], [13.769773, 100.96857], [13.77074, 100.969355], [13.770885, 100.969473], [13.771152, 100.969694], [13.77122, 100.96975], [13.771487, 100.96997], [13.77186, 100.970277], [13.772048, 100.970432], [13.772096, 100.970471], [13.772195, 100.970552], [13.772515, 100.970814], [13.772805, 100.971052], [13.773026, 100.971235], [13.773741, 100.971822], [13.773857, 100.97193], [13.772417, 100.973897], [13.772173, 100.974227], [13.771862, 100.974648], [13.771851, 100.974663], [13.771834, 100.974687], [13.770376, 100.976674], [13.769542, 100.977798], [13.768984, 100.978551], [13.767599, 100.980424], [13.767295, 100.980835], [13.767085, 100.981109], [13.766898, 100.981357], [13.766273, 100.982204], [13.765847, 100.982717], [13.765495, 100.983151], [13.76542, 100.983254], [13.765308, 100.983408], [13.764921, 100.983939], [13.764381, 100.984679], [13.764192, 100.98494], [13.763548, 100.985823], [13.763746, 100.986], [13.763992, 100.986222], [13.764483, 100.986663], [13.764558, 100.98673], [13.764821, 100.986966], [13.765597, 100.987655], [13.766475, 100.988435], [13.766793, 100.98872], [13.767147, 100.989035], [13.767304, 100.989181], [13.76875, 100.99053], [13.769698, 100.991387], [13.769798, 100.99148], [13.7709, 100.992477], [13.771372, 100.99291], [13.77145, 100.992981], [13.771595, 100.993114], [13.771873, 100.993372], [13.772246, 100.993634], [13.772368, 100.993671], [13.77249, 100.993704], [13.772686, 100.993761], [13.772852, 100.993845], [13.773488, 100.994217], [13.773554, 100.994242], [13.77363, 100.994229], [13.773693, 100.994182], [13.773795, 100.994072], [13.774022, 100.993748], [13.774235, 100.993443], [13.774444, 100.993133], [13.77467, 100.992799], [13.774911, 100.992507], [13.775158, 100.992208], [13.775209, 100.992174], [13.775285, 100.992177], [13.775798, 100.9925], [13.776128, 100.992708], [13.776594, 100.993023], [13.777665, 100.993747], [13.777786, 100.993895], [13.778242, 100.995226], [13.778756, 100.996725], [13.778842, 100.996864], [13.779095, 100.997079], [13.779498, 100.997366], [13.782235, 100.999445], [13.782463, 100.999618], [13.782672, 100.999781], [13.783136, 101.00014], [13.783614, 101.000496], [13.783804, 101.00064], [13.784072, 101.000843], [13.784164, 101.000913], [13.784501, 101.001167], [13.784545, 101.001202], [13.784898, 101.001475], [13.785369, 101.001841], [13.785767, 101.00215], [13.785804, 101.002179], [13.786496, 101.002709], [13.786583, 101.002786], [13.787122, 101.003208], [13.787388, 101.003433], [13.787748, 101.003755], [13.787995, 101.003977], [13.788527, 101.004455], [13.788898, 101.004788], [13.788982, 101.004863], [13.789029, 101.004906], [13.789799, 101.005598], [13.789875, 101.005666], [13.789913, 101.0057], [13.790202, 101.005954], [13.790493, 101.006219], [13.790603, 101.006319], [13.790721, 101.006417], [13.790919, 101.006601], [13.791204, 101.006856], [13.791452, 101.007093], [13.791635, 101.007271], [13.791895, 101.007539], [13.791952, 101.007595], [13.792645, 101.008272], [13.793381, 101.008992], [13.793774, 101.009376], [13.794117, 101.009712], [13.794474, 101.01006], [13.794981, 101.010527], [13.795543, 101.011056], [13.795581, 101.011093], [13.795692, 101.011201], [13.796035, 101.011534], [13.796379, 101.011849], [13.796652, 101.012098], [13.79693, 101.012367], [13.797455, 101.01287], [13.797733, 101.013136], [13.79822, 101.013582], [13.798275, 101.013632], [13.798501, 101.013823], [13.798563, 101.013875], [13.798844, 101.014119], [13.799237, 101.01446], [13.799306, 101.014518], [13.799543, 101.014719], [13.800366, 101.015409], [13.800468, 101.015482], [13.800658, 101.015618], [13.801091, 101.015873], [13.80146, 101.01609], [13.802395, 101.01664], [13.802889, 101.016932], [13.803078, 101.017043], [13.803705, 101.017411], [13.80394, 101.017548], [13.804089, 101.017636], [13.804658, 101.017969], [13.805639, 101.018543], [13.80593, 101.018713], [13.80656, 101.019103], [13.807839, 101.019853], [13.807895, 101.019888], [13.807926, 101.019908], [13.809064, 101.020623], [13.809643, 101.021005], [13.809821, 101.021122], [13.810363, 101.021503], [13.810851, 101.02186], [13.811388, 101.022262], [13.811782, 101.022553], [13.812395, 101.022977], [13.812811, 101.023273], [13.813219, 101.023584], [13.813489, 101.023809], [13.813602, 101.023907], [13.813825, 101.024117], [13.813974, 101.024242], [13.814132, 101.024383], [13.814331, 101.024581], [13.814705, 101.024953], [13.815235, 101.025454], [13.815537, 101.025703], [13.815756, 101.025845], [13.815886, 101.025923], [13.816161, 101.026069], [13.816482, 101.026229], [13.816553, 101.026264], [13.816668, 101.026322], [13.816779, 101.026372], [13.817085, 101.026524], [13.817324, 101.026669], [13.817486, 101.026784], [13.817593, 101.026905], [13.817687, 101.027023], [13.817753, 101.027154], [13.817817, 101.027296], [13.8179, 101.027546], [13.818034, 101.028026], [13.818087, 101.028215], [13.818271, 101.028877], [13.818317, 101.028996], [13.818349, 101.029074], [13.818412, 101.029178], [13.8185, 101.02929], [13.818945, 101.029654], [13.819417, 101.029998], [13.819636, 101.030212], [13.819729, 101.03032], [13.819811, 101.030428], [13.819979, 101.030652], [13.820158, 101.030889], [13.820239, 101.030995], [13.820361, 101.031141], [13.820528, 101.03134], [13.820558, 101.031377], [13.820634, 101.031451], [13.821036, 101.031846], [13.821284, 101.032081], [13.821586, 101.032366], [13.822126, 101.032877], [13.822523, 101.033253], [13.823935, 101.034589], [13.824268, 101.03491], [13.825133, 101.035745], [13.825547, 101.036145], [13.825915, 101.036522], [13.827027, 101.037669], [13.827187, 101.037833], [13.827226, 101.037873], [13.827402, 101.038054], [13.827601, 101.038258], [13.829171, 101.03986], [13.829782, 101.04049], [13.830024, 101.040743], [13.830917, 101.041663], [13.831924, 101.042697], [13.832389, 101.043175], [13.83245, 101.043237], [13.832766, 101.043564], [13.833023, 101.043837], [13.834064, 101.044926], [13.834106, 101.04497], [13.8345, 101.045349], [13.83484, 101.045675], [13.83516, 101.045996], [13.83551, 101.046332], [13.835834, 101.046644], [13.836487, 101.047255], [13.837713, 101.048432], [13.837757, 101.048473], [13.83781, 101.048525], [13.838074, 101.04878], [13.838398, 101.049088], [13.838981, 101.049628], [13.83929, 101.049931], [13.839425, 101.050067], [13.839629, 101.050273], [13.839757, 101.050401], [13.840217, 101.050851], [13.840774, 101.051395], [13.841212, 101.051864], [13.841288, 101.05195], [13.841632, 101.052346], [13.84185, 101.052595], [13.842541, 101.052375], [13.842912, 101.052258], [13.844237, 101.051824], [13.844815, 101.051629], [13.845251, 101.05149], [13.84541, 101.051439], [13.845909, 101.051281], [13.847083, 101.050882], [13.848057, 101.050573], [13.848561, 101.050406], [13.84901, 101.050198], [13.850534, 101.049659], [13.851139, 101.04944], [13.851304, 101.049378], [13.851955, 101.049186], [13.853459, 101.048699], [13.854065, 101.048499], [13.854271, 101.048422], [13.854533, 101.048339], [13.856031, 101.047861], [13.860285, 101.046442], [13.862542, 101.045699], [13.862876, 101.045589], [13.866886, 101.04421], [13.86676, 101.042813], [13.866714, 101.042296], [13.866657, 101.041858], [13.86664, 101.041734], [13.866621, 101.041542], [13.866597, 101.041313], [13.86654, 101.040759], [13.866537, 101.040726], [13.8665, 101.040367], [13.866328, 101.038683], [13.866293, 101.038347], [13.866268, 101.038099], [13.866247, 101.037902], [13.866029, 101.036269], [13.865994, 101.035874], [13.865946, 101.035324], [13.8659, 101.034793], [13.86589, 101.03471], [13.865786, 101.033785], [13.86577, 101.03353], [13.865742, 101.033275], [13.865659, 101.032985], [13.86553, 101.032647], [13.865401, 101.032253], [13.865271, 101.03187], [13.86513, 101.031448], [13.865063, 101.031181], [13.864951, 101.030631], [13.86481, 101.029769], [13.864742, 101.029282], [13.864672, 101.02885], [13.864628, 101.02854], [13.864514, 101.027642], [13.864443, 101.02716], [13.864297, 101.02606], [13.864226, 101.025533], [13.864136, 101.024778], [13.864073, 101.024365], [13.864036, 101.023992], [13.863973, 101.023225], [13.863852, 101.022278], [13.863818, 101.021998], [13.86381, 101.021932], [13.863719, 101.021557], [13.863594, 101.021214], [13.863456, 101.020916], [13.863331, 101.020645], [13.863307, 101.020579], [13.863137, 101.020109], [13.863102, 101.020012], [13.863073, 101.019907], [13.86287, 101.01993], [13.862645, 101.019952]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_1d7882d1eb581a67751ce5beda1416d1.bindTooltip(
+                `<div>
+                     Leg 11: P9 → P14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bf1e393317924f02b627e40ba1454c9e = L.polyline(
+                [[13.862645, 101.019952], [13.86287, 101.01993], [13.863073, 101.019907], [13.862977, 101.019561], [13.862895, 101.019217], [13.862706, 101.018421], [13.862679, 101.018155], [13.862658, 101.017295], [13.862656, 101.017084], [13.862656, 101.0166], [13.862661, 101.016319], [13.862665, 101.016141], [13.862677, 101.015439], [13.862657, 101.014779], [13.862646, 101.014508], [13.862633, 101.014208], [13.863557, 101.014098], [13.863638, 101.014094], [13.863817, 101.014137], [13.863982, 101.014168]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_bf1e393317924f02b627e40ba1454c9e.bindTooltip(
+                `<div>
+                     Leg 12: P14 → P15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d488630407a67a486838ca731f164895 = L.polyline(
+                [[13.863982, 101.014168], [13.863817, 101.014137], [13.863638, 101.014094], [13.863557, 101.014098], [13.862633, 101.014208], [13.862469, 101.01321], [13.862425, 101.012748], [13.862422, 101.012459], [13.862386, 101.011884], [13.862335, 101.011299], [13.86231, 101.01101], [13.862307, 101.010967], [13.862227, 101.010002], [13.862177, 101.009583], [13.86213, 101.009057], [13.862091, 101.008541], [13.862058, 101.007918], [13.862054, 101.007863], [13.86204, 101.007637], [13.862036, 101.007574], [13.86199, 101.006835], [13.861976, 101.006617], [13.861941, 101.006075], [13.861922, 101.00583], [13.861884, 101.005354], [13.861762, 101.003812], [13.86174, 101.003532], [13.861651, 101.002231], [13.861615, 101.001867], [13.861477, 101.000984], [13.861354, 101.000019], [13.861263, 100.999326], [13.861179, 100.998686], [13.861141, 100.998391], [13.861084, 100.997953], [13.861071, 100.997873], [13.860924, 100.996922], [13.860855, 100.996478], [13.860756, 100.995842], [13.861922, 100.995705], [13.862626, 100.995619], [13.8627, 100.995606], [13.862963, 100.995593], [13.864365, 100.99544], [13.86447, 100.996405], [13.864527, 100.996922], [13.864533, 100.996985], [13.864586, 100.997497], [13.864671, 100.998258], [13.865282, 100.998219]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_d488630407a67a486838ca731f164895.bindTooltip(
+                `<div>
+                     Leg 13: P15 → P16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_48af27cf7115c9850b8875037613bbc2 = L.polyline(
+                [[13.865282, 100.998219], [13.864671, 100.998258], [13.864586, 100.997497], [13.864533, 100.996985], [13.864527, 100.996922], [13.86447, 100.996405], [13.864365, 100.99544], [13.862963, 100.995593], [13.8627, 100.995606], [13.862626, 100.995619], [13.86254, 100.995124], [13.862517, 100.994908], [13.862453, 100.994303], [13.862426, 100.993879], [13.862385, 100.993239], [13.862346, 100.992998], [13.862327, 100.992805], [13.862308, 100.992616], [13.86228, 100.992457], [13.862233, 100.992254], [13.862218, 100.991868], [13.862179, 100.991612], [13.862111, 100.991304], [13.862104, 100.99083], [13.862045, 100.990313], [13.862038, 100.990243], [13.862018, 100.989976], [13.861988, 100.989686], [13.86197, 100.989532], [13.861943, 100.989359], [13.861893, 100.989195], [13.861777, 100.988428], [13.861775, 100.988249], [13.861768, 100.988066], [13.861724, 100.987747], [13.861707, 100.9876], [13.861698, 100.98741], [13.861691, 100.987102], [13.861672, 100.986776], [13.861656, 100.986614], [13.861616, 100.986408], [13.861273, 100.986461], [13.860559, 100.986543], [13.860166, 100.9866]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_48af27cf7115c9850b8875037613bbc2.bindTooltip(
+                `<div>
+                     Leg 14: P16 → P17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ebbe694aa60318d672586c9ff5d478cc = L.polyline(
+                [[13.860166, 100.9866], [13.860559, 100.986543], [13.861273, 100.986461], [13.861616, 100.986408], [13.861656, 100.986614], [13.861672, 100.986776], [13.861691, 100.987102], [13.861698, 100.98741], [13.861707, 100.9876], [13.861724, 100.987747], [13.861768, 100.988066], [13.861775, 100.988249], [13.861777, 100.988428], [13.861893, 100.989195], [13.861933, 100.989195], [13.862256, 100.989205], [13.86254, 100.989209], [13.862911, 100.989257], [13.862927, 100.988996], [13.862956, 100.988211], [13.863294, 100.988313], [13.863601, 100.988369], [13.864456, 100.988317], [13.864453, 100.988296], [13.864436, 100.988088], [13.864425, 100.988056], [13.864408, 100.988026], [13.864633, 100.987998], [13.864858, 100.987966], [13.864979, 100.987932], [13.865192, 100.987848], [13.865449, 100.987743], [13.865744, 100.98763], [13.866011, 100.987504], [13.866314, 100.987347], [13.866597, 100.98719], [13.866933, 100.987001], [13.867249, 100.986812], [13.86756, 100.9866], [13.867915, 100.986359], [13.868221, 100.986165], [13.86851, 100.986052], [13.868718, 100.986025], [13.868984, 100.986014], [13.869187, 100.986071], [13.86939, 100.986154], [13.869546, 100.986264], [13.869714, 100.986409], [13.870054, 100.986797], [13.870488, 100.987309], [13.87075, 100.987573], [13.870886, 100.987665], [13.871126, 100.987819], [13.871332, 100.987926], [13.871733, 100.988079], [13.872288, 100.988365], [13.87263, 100.98855], [13.872895, 100.988694], [13.873423, 100.988946], [13.874105, 100.989272], [13.87429, 100.989333], [13.874482, 100.989364], [13.874618, 100.989371], [13.874754, 100.989364], [13.874896, 100.98934], [13.875033, 100.989303], [13.875177, 100.989256], [13.87527, 100.989218], [13.875472, 100.989116], [13.875736, 100.989006], [13.876046, 100.988881], [13.876199, 100.988829], [13.876344, 100.988804], [13.876492, 100.988796], [13.876666, 100.988793], [13.876911, 100.988807], [13.87709, 100.988825], [13.877228, 100.988859], [13.877444, 100.988937], [13.877851, 100.989121], [13.878338, 100.989308], [13.878486, 100.989342], [13.878623, 100.989357], [13.878793, 100.989351], [13.878938, 100.989331], [13.879107, 100.989289], [13.879541, 100.989158], [13.880172, 100.988999], [13.880456, 100.988947], [13.880665, 100.98892], [13.881061, 100.988894], [13.881876, 100.988875], [13.882874, 100.9889], [13.8832, 100.988933], [13.883809, 100.989051], [13.884378, 100.989162], [13.884655, 100.989189], [13.8854, 100.989228], [13.886235, 100.989258], [13.88623, 100.989896], [13.886231, 100.990452], [13.886233, 100.990604], [13.88623, 100.990735], [13.88623, 100.990786], [13.886226, 100.990863], [13.886056, 100.990889], [13.886008, 100.990909], [13.885938, 100.990951], [13.885926, 100.990956]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_ebbe694aa60318d672586c9ff5d478cc.bindTooltip(
+                `<div>
+                     Leg 15: P17 → P21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_41a150a2ced2406c740a63b96d2f010b = L.polyline(
+                [[13.885926, 100.990956], [13.885938, 100.990951], [13.886008, 100.990909], [13.886056, 100.990889], [13.886226, 100.990863], [13.88623, 100.990786], [13.88623, 100.990735], [13.886233, 100.990604], [13.886231, 100.990452], [13.886394, 100.990539], [13.886477, 100.990572], [13.886532, 100.990594], [13.886624, 100.990609], [13.886768, 100.990606], [13.888074, 100.990592], [13.888385, 100.990573], [13.888693, 100.990538], [13.888835, 100.991417], [13.888888, 100.991747], [13.889128, 100.993759], [13.889188, 100.99427], [13.889263, 100.99427], [13.88958, 100.994252], [13.889661, 100.994273], [13.889851, 100.994345], [13.89007, 100.994412], [13.890312, 100.994442], [13.890851, 100.994493], [13.891964, 100.994753], [13.891987, 100.994823], [13.892088, 100.995137], [13.892161, 100.99539], [13.892398, 100.996209], [13.892608, 100.997017], [13.892773, 100.997521], [13.892779, 100.997567], [13.892794, 100.997739], [13.892827, 100.997987], [13.8929, 100.998659], [13.89299, 100.999659], [13.89302, 100.999986], [13.89305, 101.000392], [13.893079, 101.000768], [13.89311, 101.001126], [13.893163, 101.001638], [13.893273, 101.00259], [13.893323, 101.003025], [13.893374, 101.003473], [13.893432, 101.003946], [13.893507, 101.004551], [13.893564, 101.005007], [13.893611, 101.005388], [13.893668, 101.005855], [13.893715, 101.006231], [13.893733, 101.006381], [13.893754, 101.006597], [13.89383, 101.006914], [13.893889, 101.007105], [13.894015, 101.007486], [13.894369, 101.008398], [13.894406, 101.008529], [13.894442, 101.008687], [13.894429, 101.008985], [13.894419, 101.009077], [13.894375, 101.0094], [13.894314, 101.009709], [13.894288, 101.009869], [13.894279, 101.009934], [13.894273, 101.010122], [13.894292, 101.010669], [13.894271, 101.010953], [13.894258, 101.011116], [13.893622, 101.011171], [13.893078, 101.011251], [13.892924, 101.011308], [13.892804, 101.01142]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_41a150a2ced2406c740a63b96d2f010b.bindTooltip(
+                `<div>
+                     Leg 16: P21 → P19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2f78da9d4b1eafbbe7a09d9a4737c2eb = L.polyline(
+                [[13.892804, 101.01142], [13.892924, 101.011308], [13.893078, 101.011251], [13.893622, 101.011171], [13.894258, 101.011116], [13.894244, 101.011442], [13.894246, 101.011466], [13.894333, 101.012329], [13.894435, 101.013266], [13.89444, 101.01334], [13.894452, 101.013665], [13.894453, 101.013703], [13.894457, 101.01381], [13.894473, 101.014331], [13.894477, 101.014424], [13.894478, 101.014472], [13.894479, 101.014668], [13.89448, 101.014902], [13.894477, 101.01552], [13.894476, 101.015857], [13.894475, 101.0159], [13.894466, 101.016401], [13.894452, 101.017138], [13.894442, 101.017689], [13.894439, 101.017839], [13.894508, 101.018554], [13.89452, 101.018676], [13.894518, 101.018727], [13.894541, 101.019151], [13.894561, 101.019467], [13.894576, 101.019703], [13.894589, 101.01992], [13.894595, 101.020017], [13.894612, 101.020334], [13.894643, 101.020931], [13.894705, 101.022026], [13.894715, 101.022289], [13.89474, 101.022774], [13.89476, 101.023158], [13.894773, 101.023396], [13.894776, 101.023466], [13.89481, 101.023791], [13.894838, 101.024218], [13.894864, 101.024438], [13.894902, 101.024733], [13.894973, 101.025333], [13.894994, 101.025504], [13.895017, 101.02568], [13.895078, 101.02605], [13.8951, 101.026266], [13.895111, 101.02647], [13.895108, 101.026752], [13.895055, 101.027336], [13.89501, 101.027861], [13.894976, 101.028302], [13.894982, 101.028585], [13.894986, 101.028842], [13.895054, 101.029511], [13.895084, 101.030002], [13.895088, 101.030185], [13.895093, 101.030342], [13.895093, 101.030395], [13.895088, 101.031069], [13.895099, 101.03137], [13.895127, 101.031712], [13.895174, 101.032198], [13.895226, 101.03262], [13.895291, 101.032992], [13.895316, 101.033131], [13.895344, 101.033277], [13.895395, 101.033552], [13.895407, 101.033626], [13.895444, 101.034035], [13.895499, 101.034492], [13.895516, 101.034691], [13.895541, 101.034892], [13.89559, 101.03532], [13.895619, 101.035568], [13.895686, 101.03618], [13.895752, 101.036628], [13.895761, 101.036715], [13.895801, 101.037073], [13.895819, 101.03723], [13.895851, 101.037431], [13.895899, 101.037895], [13.895936, 101.038143], [13.895952, 101.038248], [13.895958, 101.038303], [13.896013, 101.038863], [13.896031, 101.039056], [13.896031, 101.039659], [13.896022, 101.039961], [13.896012, 101.040265], [13.896014, 101.040351], [13.896, 101.040744], [13.895992, 101.040959], [13.895981, 101.041115], [13.895955, 101.041513], [13.895923, 101.041832], [13.895871, 101.042196], [13.895845, 101.042521], [13.895863, 101.042934], [13.895902, 101.043545], [13.895906, 101.043648], [13.895922, 101.044023], [13.895939, 101.044289], [13.898483, 101.044346], [13.900592, 101.044381], [13.90059, 101.044506], [13.89848, 101.044471], [13.896489, 101.044462], [13.896527, 101.044962], [13.896542, 101.045046], [13.89656, 101.045234], [13.896581, 101.04547], [13.896664, 101.04637], [13.896688, 101.046637], [13.896711, 101.046882], [13.896722, 101.047011], [13.896888, 101.048396], [13.8969, 101.048491], [13.896944, 101.04873], [13.896986, 101.048958], [13.897016, 101.049119], [13.897212, 101.049779], [13.897271, 101.04994], [13.897579, 101.050781], [13.89764, 101.050948], [13.897805, 101.051399], [13.897899, 101.051656], [13.897993, 101.052129], [13.898076, 101.052838], [13.898126, 101.053269], [13.898154, 101.053509], [13.898158, 101.053548], [13.898168, 101.053643], [13.898253, 101.054478], [13.898408, 101.055559], [13.898431, 101.055716], [13.898494, 101.056157], [13.898514, 101.056295], [13.898634, 101.057129], [13.898647, 101.057223], [13.89865, 101.057246], [13.898689, 101.057513], [13.898817, 101.05841], [13.897591, 101.058538], [13.897535, 101.058538], [13.897479, 101.058529], [13.897254, 101.058452], [13.897214, 101.058444], [13.897188, 101.058443], [13.896731, 101.058494], [13.896452, 101.058506], [13.896343, 101.058514], [13.896384, 101.059107], [13.896396, 101.059189], [13.896429, 101.059422], [13.896462, 101.059654], [13.896477, 101.059881], [13.896499, 101.06022], [13.8965, 101.060247], [13.896533, 101.06045], [13.896587, 101.060792], [13.896595, 101.060845], [13.896619, 101.061261], [13.896623, 101.061294], [13.896696, 101.061873], [13.896732, 101.062159], [13.896801, 101.062708], [13.896848, 101.063083], [13.896897, 101.063559], [13.896987, 101.064297], [13.897066, 101.06504], [13.897112, 101.06555], [13.897173, 101.066086], [13.897225, 101.066496], [13.897306, 101.067135], [13.897308, 101.067166], [13.89733, 101.067457], [13.897377, 101.067855], [13.897135, 101.067869], [13.896944, 101.06787], [13.896824, 101.067867], [13.896728, 101.067873], [13.896667, 101.067893], [13.896638, 101.067929], [13.896637, 101.068001], [13.896678, 101.068551], [13.89675, 101.069224]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_2f78da9d4b1eafbbe7a09d9a4737c2eb.bindTooltip(
+                `<div>
+                     Leg 17: P19 → P20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_74b7321c8994330793832c4d169105dc = L.polyline(
+                [[13.89675, 101.069224], [13.896678, 101.068551], [13.896637, 101.068001], [13.896638, 101.067929], [13.896667, 101.067893], [13.896728, 101.067873], [13.896824, 101.067867], [13.896944, 101.06787], [13.897135, 101.067869], [13.897377, 101.067855], [13.89733, 101.067457], [13.897308, 101.067166], [13.897306, 101.067135], [13.897225, 101.066496], [13.897173, 101.066086], [13.897112, 101.06555], [13.897066, 101.06504], [13.896987, 101.064297], [13.896897, 101.063559], [13.896848, 101.063083], [13.896801, 101.062708], [13.896732, 101.062159], [13.896696, 101.061873], [13.896623, 101.061294], [13.896619, 101.061261], [13.896595, 101.060845], [13.896587, 101.060792], [13.896533, 101.06045], [13.8965, 101.060247], [13.896499, 101.06022], [13.896477, 101.059881], [13.896462, 101.059654], [13.896429, 101.059422], [13.896396, 101.059189], [13.896384, 101.059107], [13.896343, 101.058514], [13.896452, 101.058506], [13.896731, 101.058494], [13.897188, 101.058443], [13.897214, 101.058444], [13.897254, 101.058452], [13.897479, 101.058529], [13.897535, 101.058538], [13.897591, 101.058538], [13.898817, 101.05841], [13.898689, 101.057513], [13.89865, 101.057246], [13.898647, 101.057223], [13.898634, 101.057129], [13.898514, 101.056295], [13.898494, 101.056157], [13.898431, 101.055716], [13.898408, 101.055559], [13.898253, 101.054478], [13.898168, 101.053643], [13.898158, 101.053548], [13.898154, 101.053509], [13.898126, 101.053269], [13.898076, 101.052838], [13.897993, 101.052129], [13.897899, 101.051656], [13.897805, 101.051399], [13.89764, 101.050948], [13.897579, 101.050781], [13.897271, 101.04994], [13.897212, 101.049779], [13.897016, 101.049119], [13.896986, 101.048958], [13.896944, 101.04873], [13.8969, 101.048491], [13.896888, 101.048396], [13.896722, 101.047011], [13.896711, 101.046882], [13.896688, 101.046637], [13.896664, 101.04637], [13.896581, 101.04547], [13.89656, 101.045234], [13.896542, 101.045046], [13.896527, 101.044962], [13.896489, 101.044462], [13.89534, 101.044448], [13.894774, 101.044436], [13.894641, 101.044434], [13.89427, 101.04442], [13.893755, 101.0444], [13.888902, 101.044291], [13.881715, 101.044175], [13.877096, 101.044091], [13.876904, 101.044086], [13.876595, 101.044078], [13.876455, 101.044074], [13.873913, 101.044006], [13.873161, 101.043986], [13.872951, 101.043981], [13.872649, 101.043977], [13.872445, 101.043975], [13.872263, 101.04397], [13.871867, 101.043962], [13.871494, 101.043959], [13.871399, 101.043958], [13.871301, 101.043957], [13.870673, 101.043945], [13.870409, 101.043931], [13.870232, 101.043927], [13.869865, 101.043916], [13.869499, 101.043915], [13.869044, 101.043924], [13.868869, 101.043945], [13.868399, 101.044009], [13.868073, 101.044049], [13.867853, 101.044063], [13.86769, 101.04409], [13.867517, 101.044131], [13.867609, 101.044189], [13.867664, 101.044203], [13.867888, 101.044203], [13.86794, 101.044203], [13.867991, 101.04423], [13.868048, 101.044276], [13.868082, 101.04434], [13.868091, 101.044362], [13.868096, 101.044386], [13.868111, 101.044766], [13.868129, 101.045082], [13.868156, 101.045193], [13.868212, 101.045409], [13.86823, 101.045521], [13.868257, 101.045722], [13.868281, 101.045969], [13.868334, 101.046238], [13.868361, 101.046512], [13.868385, 101.046689], [13.868436, 101.047089], [13.868459, 101.047361], [13.868526, 101.048117], [13.86855, 101.048485], [13.868574, 101.048834], [13.868645, 101.049442], [13.868652, 101.049553], [13.868682, 101.050022], [13.868693, 101.050107], [13.868727, 101.050243], [13.868787, 101.050494], [13.868822, 101.050756], [13.86885, 101.050999], [13.868895, 101.051443], [13.868903, 101.051525], [13.868932, 101.052014], [13.868993, 101.052428], [13.869012, 101.052594], [13.869103, 101.053132], [13.869181, 101.053477], [13.869202, 101.053632], [13.869217, 101.053773], [13.869221, 101.053811], [13.869234, 101.054284], [13.869235, 101.054381], [13.869237, 101.054531], [13.869238, 101.054644], [13.869263, 101.054763], [13.869291, 101.054915], [13.869319, 101.055027], [13.869334, 101.055129], [13.869336, 101.055231], [13.869335, 101.05532], [13.869327, 101.05573], [13.869368, 101.056065], [13.869417, 101.056468], [13.869456, 101.056784], [13.869488, 101.057047], [13.869547, 101.057419], [13.869591, 101.057415], [13.869856, 101.057398], [13.869918, 101.057393], [13.86997, 101.057389], [13.870453, 101.05732], [13.870666, 101.057295], [13.870948, 101.057264], [13.87114, 101.057246], [13.871598, 101.057209], [13.871552, 101.056858], [13.871528, 101.056678], [13.871482, 101.056163], [13.871458, 101.055943], [13.871394, 101.055662], [13.870895, 101.055701], [13.870346, 101.055771]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_74b7321c8994330793832c4d169105dc.bindTooltip(
+                `<div>
+                     Leg 18: P20 → P13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e2cfc801086698b77c1d74bc1912e65e = L.polyline(
+                [[13.870346, 101.055771], [13.870895, 101.055701], [13.871394, 101.055662], [13.871458, 101.055943], [13.871482, 101.056163], [13.871528, 101.056678], [13.871552, 101.056858], [13.871598, 101.057209], [13.87114, 101.057246], [13.870948, 101.057264], [13.870666, 101.057295], [13.870453, 101.05732], [13.86997, 101.057389], [13.869918, 101.057393], [13.869856, 101.057398], [13.869591, 101.057415], [13.869547, 101.057419], [13.869555, 101.057634], [13.869574, 101.057747], [13.869595, 101.057842], [13.86961, 101.057907], [13.869648, 101.058088], [13.869658, 101.058163], [13.869663, 101.058202], [13.869689, 101.058404], [13.869696, 101.058609], [13.869702, 101.058751], [13.869707, 101.058891], [13.869728, 101.059379], [13.869742, 101.059714], [13.869765, 101.059819], [13.869805, 101.059967], [13.8699, 101.060382], [13.869925, 101.06052], [13.869921, 101.060673], [13.869919, 101.060827], [13.869969, 101.061022], [13.869972, 101.061096], [13.869984, 101.061159], [13.870059, 101.061659], [13.870123, 101.062204], [13.870128, 101.062246], [13.870155, 101.06238], [13.870151, 101.06248], [13.870143, 101.06257], [13.87017, 101.062787], [13.870178, 101.063202], [13.870232, 101.063651], [13.870238, 101.063699], [13.870241, 101.063723], [13.870251, 101.063762], [13.8703, 101.063952], [13.87033, 101.064072], [13.870351, 101.064154], [13.870377, 101.064259], [13.870389, 101.064333], [13.870398, 101.064587], [13.870396, 101.064778], [13.870393, 101.065088], [13.870436, 101.065466], [13.870504, 101.065946], [13.87053, 101.066092], [13.870542, 101.066163], [13.870572, 101.066348], [13.870812, 101.068284], [13.870925, 101.069421], [13.870997, 101.070071], [13.871046, 101.070354], [13.871132, 101.071159], [13.871199, 101.071599], [13.871272, 101.072028], [13.871284, 101.072118], [13.871335, 101.072868]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_e2cfc801086698b77c1d74bc1912e65e.bindTooltip(
+                `<div>
+                     Leg 19: P13 → P12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a9138600a5b457000a379f2537d0f5e3 = L.polyline(
+                [[13.871335, 101.072868], [13.871336, 101.072879], [13.87135, 101.072996], [13.871448, 101.073556], [13.871456, 101.073629], [13.871457, 101.073699], [13.871455, 101.07392], [13.871451, 101.074249], [13.871452, 101.0743], [13.871458, 101.07471], [13.871459, 101.074778], [13.871488, 101.075061], [13.871558, 101.075438], [13.87158, 101.075588], [13.871685, 101.076559], [13.87176, 101.077089], [13.871768, 101.07714], [13.871832, 101.07754], [13.871882, 101.078004], [13.871891, 101.078087], [13.871896, 101.078146], [13.871931, 101.078549], [13.871949, 101.078744], [13.871976, 101.079053], [13.872103, 101.07983], [13.872117, 101.079927], [13.872155, 101.080918], [13.872156, 101.080958], [13.872188, 101.081746], [13.872216, 101.08187], [13.872234, 101.081911], [13.872253, 101.081953], [13.872349, 101.082248], [13.872398, 101.082434], [13.872424, 101.082574], [13.87243, 101.08266], [13.872435, 101.082748], [13.872435, 101.08294], [13.872435, 101.082957], [13.872398, 101.083095], [13.872396, 101.083141], [13.872401, 101.083187], [13.87245, 101.083375], [13.872487, 101.083564], [13.872533, 101.0839], [13.872545, 101.084178], [13.872566, 101.084321], [13.872631, 101.084767], [13.872664, 101.085255], [13.872675, 101.08542], [13.872727, 101.085828], [13.872807, 101.086147], [13.872833, 101.086286], [13.872849, 101.086603], [13.872869, 101.08675], [13.872871, 101.086897], [13.872859, 101.087077], [13.872858, 101.087218], [13.872874, 101.08738], [13.8729, 101.087446], [13.872954, 101.087525], [13.872973, 101.087666], [13.873012, 101.087903], [13.873019, 101.087948], [13.873015, 101.088017], [13.873003, 101.088084], [13.872886, 101.088277], [13.872873, 101.088327], [13.87287, 101.08838], [13.872877, 101.088417], [13.872896, 101.088442], [13.873013, 101.088479], [13.873037, 101.088504], [13.873055, 101.088535], [13.873072, 101.08879], [13.873092, 101.08884], [13.873122, 101.089105], [13.873163, 101.089436], [13.873193, 101.089676], [13.873198, 101.089777], [13.873217, 101.090178], [13.873199, 101.090623], [13.873286, 101.090956], [13.873305, 101.091026], [13.873308, 101.091166], [13.873204, 101.091402], [13.87323, 101.09174], [13.87321, 101.091839], [13.873157, 101.09193], [13.872885, 101.092086], [13.87278, 101.092177], [13.872761, 101.092438], [13.872779, 101.092687], [13.872848, 101.093259], [13.872874, 101.093476], [13.873159, 101.09372], [13.873188, 101.09382], [13.873247, 101.094019], [13.873273, 101.094317], [13.873273, 101.094629], [13.873248, 101.094865], [13.873222, 101.0951], [13.873251, 101.09558], [13.873261, 101.09574], [13.873254, 101.096132], [13.87325, 101.096801], [13.873434, 101.097125], [13.873706, 101.097291], [13.873895, 101.097374], [13.873933, 101.097388], [13.873966, 101.097401], [13.873996, 101.097421], [13.874006, 101.097446], [13.874013, 101.097494], [13.874017, 101.097565], [13.874025, 101.097636], [13.874064, 101.097873], [13.874072, 101.097942], [13.87409, 101.098107], [13.874108, 101.098262], [13.874123, 101.098625], [13.87415, 101.09918], [13.874155, 101.099248], [13.874179, 101.099312], [13.874244, 101.099458], [13.874271, 101.099527], [13.874287, 101.09958], [13.8743, 101.09967], [13.874327, 101.099795], [13.874359, 101.099978], [13.874383, 101.100109], [13.874394, 101.100183], [13.874403, 101.100305], [13.874409, 101.100484], [13.874399, 101.100756], [13.874385, 101.100966], [13.874384, 101.101032], [13.874386, 101.101099], [13.874402, 101.101153], [13.874437, 101.101243], [13.874498, 101.101381], [13.874556, 101.10152], [13.874593, 101.101659], [13.874616, 101.101972], [13.874653, 101.102292], [13.874696, 101.102532]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_a9138600a5b457000a379f2537d0f5e3.bindTooltip(
+                `<div>
+                     Leg 20: P12 → P18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2438127c8c6a5d9e7a991ef2761daba1 = L.polyline(
+                [[13.874696, 101.102532], [13.874719, 101.10266], [13.874727, 101.103041], [13.874749, 101.10333], [13.874727, 101.103443], [13.874623, 101.103573], [13.874571, 101.103699], [13.874552, 101.103925], [13.874614, 101.104213], [13.874643, 101.104574], [13.874652, 101.104891], [13.874704, 101.105476], [13.874712, 101.105834], [13.874698, 101.106018], [13.874633, 101.106308], [13.874461, 101.106618], [13.874453, 101.106676], [13.874448, 101.106733], [13.874472, 101.106798], [13.874511, 101.106826], [13.874559, 101.106839], [13.874763, 101.106881], [13.87525, 101.106982], [13.875306, 101.107038], [13.875336, 101.107082], [13.875345, 101.107124], [13.875317, 101.107276], [13.8752, 101.107626], [13.875175, 101.107665], [13.875121, 101.107691], [13.875069, 101.107702], [13.875027, 101.107703], [13.875007, 101.107714], [13.874993, 101.10773], [13.87498, 101.107767], [13.875246, 101.110147], [13.875259, 101.110396], [13.875273, 101.110991], [13.875268, 101.111237], [13.875242, 101.111368], [13.875178, 101.111532], [13.875081, 101.111729], [13.875064, 101.111796], [13.87506, 101.111884], [13.875121, 101.112315], [13.875171, 101.112684], [13.875193, 101.112931], [13.875218, 101.113108], [13.875294, 101.113322], [13.87533, 101.113466], [13.875409, 101.11388], [13.875446, 101.11401], [13.875518, 101.114181], [13.875572, 101.114542], [13.875657, 101.115079], [13.875693, 101.115329], [13.8757, 101.115499], [13.875685, 101.115767], [13.875638, 101.116346], [13.875666, 101.116851], [13.875672, 101.116948], [13.875699, 101.117339], [13.875705, 101.117421], [13.874262, 101.117848], [13.872853, 101.118265], [13.871405, 101.11872], [13.870612, 101.118974], [13.869005, 101.119486], [13.868928, 101.119491], [13.86887, 101.119464], [13.868834, 101.119405], [13.868753, 101.119199], [13.868707, 101.119158], [13.868629, 101.119162], [13.868273, 101.119238], [13.867753, 101.119299], [13.867191, 101.119346], [13.866121, 101.119478], [13.864537, 101.119655], [13.864296, 101.119682], [13.864253, 101.11969], [13.86384, 101.119785], [13.863781, 101.119793], [13.863709, 101.119815], [13.863647, 101.119854], [13.863616, 101.119884], [13.863577, 101.11992], [13.86353, 101.119957], [13.863464, 101.119988], [13.863337, 101.120022], [13.862576, 101.12012], [13.862458, 101.120135], [13.862412, 101.120141], [13.86062, 101.120376], [13.860243, 101.120425], [13.85931, 101.120547], [13.859567, 101.121283], [13.859766, 101.121854], [13.859772, 101.121874], [13.859817, 101.122016], [13.859878, 101.122209], [13.86009, 101.122842], [13.860169, 101.123065], [13.860236, 101.12326], [13.860294, 101.123418], [13.860416, 101.123715], [13.860674, 101.124364], [13.860715, 101.124468], [13.860849, 101.124806], [13.860861, 101.124835], [13.861083, 101.125371], [13.861529, 101.126449], [13.861873, 101.12728], [13.862834, 101.129846], [13.864607, 101.134693], [13.864837, 101.135344], [13.865691, 101.13769], [13.865807, 101.138011], [13.865938, 101.138374], [13.866036, 101.138643], [13.866149, 101.138954], [13.866368, 101.139576], [13.86643, 101.139751], [13.866647, 101.140349], [13.866788, 101.140768], [13.86681, 101.140818], [13.866838, 101.14088], [13.866901, 101.141092], [13.867094, 101.141596], [13.86718, 101.141803], [13.867292, 101.14204], [13.867547, 101.14255], [13.867639, 101.142689], [13.867975, 101.143195], [13.868047, 101.143303], [13.868274, 101.143561], [13.868386, 101.143687], [13.868657, 101.143947], [13.868744, 101.14403], [13.869176, 101.144465], [13.870063, 101.145359], [13.870939, 101.146257], [13.871598, 101.146952], [13.872262, 101.147636], [13.872603, 101.147981], [13.873346, 101.148733], [13.87345, 101.14884], [13.873303, 101.148828], [13.873158, 101.148816], [13.873047, 101.148788], [13.872291, 101.148429], [13.871279, 101.147936], [13.870473, 101.14759], [13.870422, 101.147588], [13.870378, 101.147619], [13.870332, 101.147685], [13.870126, 101.14819], [13.870009, 101.148468], [13.869796, 101.148932], [13.869723, 101.149096], [13.869456, 101.149693], [13.869432, 101.149801], [13.869444, 101.149895], [13.869488, 101.149954], [13.869578, 101.150035], [13.869746, 101.150134], [13.870046, 101.15031], [13.870195, 101.150428], [13.87024, 101.150497], [13.870273, 101.15057], [13.870273, 101.150709], [13.870191, 101.150903], [13.870095, 101.151111], [13.869943, 101.15144], [13.869754, 101.151879], [13.869563, 101.152321], [13.869405, 101.15266], [13.869274, 101.152935], [13.869117, 101.15328], [13.869013, 101.153514], [13.868792, 101.15397], [13.868349, 101.154886], [13.868232, 101.155173], [13.868137, 101.155399], [13.867943, 101.155865], [13.867819, 101.156199], [13.867685, 101.156562], [13.867642, 101.156666], [13.867204, 101.157731], [13.867108, 101.157958], [13.867055, 101.158084], [13.866775, 101.158747], [13.866503, 101.15944], [13.866266, 101.160006], [13.866242, 101.160063], [13.865934, 101.160826], [13.865809, 101.161135], [13.865802, 101.161152], [13.865721, 101.161304], [13.865695, 101.161345], [13.865661, 101.161401], [13.865556, 101.161531], [13.865492, 101.161599], [13.865441, 101.161653], [13.86538, 101.161705], [13.865219, 101.16182], [13.865029, 101.161929], [13.864839, 101.162014], [13.864602, 101.162071], [13.863575, 101.162196], [13.862875, 101.162282], [13.861582, 101.16244], [13.861542, 101.162445], [13.861421, 101.16246], [13.861372, 101.162466], [13.860501, 101.162571], [13.86046, 101.162578], [13.860192, 101.162616], [13.860063, 101.162634], [13.859621, 101.162697], [13.859349, 101.162725], [13.859202, 101.16274], [13.858802, 101.162781], [13.858689, 101.162793], [13.858655, 101.162797], [13.858627, 101.162799], [13.858257, 101.162854], [13.857977, 101.162893], [13.85774, 101.162946], [13.856998, 101.163113], [13.856497, 101.163228], [13.856421, 101.163245], [13.856183, 101.1633], [13.856082, 101.163323], [13.856012, 101.163339], [13.855745, 101.163392], [13.85566, 101.163417], [13.855501, 101.16348], [13.855379, 101.163542], [13.855052, 101.16376], [13.854936, 101.163817], [13.854895, 101.163837], [13.854852, 101.163853], [13.854766, 101.163884], [13.854561, 101.163953], [13.854477, 101.163989], [13.85442, 101.164013], [13.854078, 101.164192], [13.853888, 101.164263], [13.85365, 101.164329], [13.853386, 101.164371], [13.853116, 101.164399], [13.852457, 101.16448], [13.852273, 101.164502], [13.851523, 101.164592], [13.851413, 101.164608], [13.850683, 101.1647], [13.850575, 101.164714], [13.850515, 101.164723], [13.84991, 101.164812], [13.84978, 101.164817], [13.849523, 101.164821], [13.849426, 101.164823], [13.849269, 101.164818], [13.849049, 101.164792], [13.848919, 101.164773], [13.848828, 101.164748], [13.848784, 101.164735], [13.848626, 101.164678], [13.848497, 101.164625], [13.848306, 101.16454], [13.848172, 101.16447], [13.847664, 101.164174], [13.84736, 101.163996], [13.847317, 101.163971], [13.846422, 101.16344], [13.844597, 101.162374], [13.844156, 101.162141], [13.843699, 101.161872], [13.84258, 101.161215], [13.842432, 101.161128], [13.842361, 101.161086], [13.842046, 101.160961], [13.841741, 101.160907], [13.841526, 101.160907], [13.841324, 101.160929], [13.841059, 101.161001], [13.840924, 101.161055], [13.840364, 101.161374], [13.839907, 101.161635], [13.8397, 101.161754], [13.839322, 101.161976], [13.837984, 101.162751], [13.837838, 101.162835], [13.837696, 101.162915], [13.837571, 101.162986], [13.835249, 101.164295], [13.834967, 101.164454], [13.834562, 101.164682], [13.834341, 101.164807], [13.834213, 101.164861], [13.834076, 101.164901], [13.833909, 101.16494], [13.833723, 101.164973], [13.833455, 101.165002], [13.83323, 101.165018], [13.833012, 101.165023], [13.832079, 101.164998], [13.831131, 101.164977], [13.830981, 101.164979], [13.830859, 101.164988], [13.830739, 101.165008], [13.830608, 101.165046], [13.830436, 101.165105], [13.830303, 101.165168], [13.830178, 101.16524], [13.830042, 101.165348], [13.829899, 101.165474], [13.829756, 101.165613], [13.829629, 101.165776], [13.829558, 101.165866], [13.829362, 101.166131], [13.829165, 101.166396], [13.829127, 101.166447], [13.82852, 101.167266], [13.827734, 101.168327], [13.827696, 101.168378], [13.826526, 101.169956], [13.825137, 101.17183], [13.824284, 101.172981], [13.823708, 101.173756], [13.823616, 101.173879], [13.822199, 101.175783], [13.821944, 101.176133], [13.821526, 101.17669], [13.821329, 101.17696], [13.82113, 101.177242], [13.820972, 101.177493], [13.820808, 101.177745], [13.820625, 101.178071], [13.820524, 101.178259], [13.820445, 101.178418], [13.819942, 101.179467], [13.819738, 101.179893], [13.819596, 101.180187], [13.819456, 101.180468], [13.819022, 101.181373], [13.818761, 101.181913], [13.818439, 101.182579], [13.818195, 101.183093], [13.817616, 101.184313], [13.817444, 101.184665], [13.817369, 101.184806], [13.817314, 101.184896], [13.817157, 101.185135], [13.817079, 101.185232], [13.816943, 101.185403], [13.81684, 101.185514], [13.816745, 101.185617], [13.816569, 101.185765], [13.816412, 101.185862], [13.816237, 101.18594], [13.815645, 101.186166], [13.815191, 101.186341], [13.814786, 101.186496], [13.814576, 101.186577], [13.813602, 101.186926], [13.813442, 101.186996], [13.813314, 101.187057], [13.813136, 101.187172], [13.812281, 101.187777], [13.812251, 101.187798], [13.811573, 101.188277], [13.811233, 101.188498], [13.811129, 101.188577], [13.810755, 101.188843], [13.809355, 101.189842], [13.808919, 101.190153], [13.808531, 101.19043], [13.808411, 101.190511], [13.808385, 101.190527]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_2438127c8c6a5d9e7a991ef2761daba1.bindTooltip(
+                `<div>
+                     Leg 21: P18 → P11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c9f7c9190ef0956eb23e3e98d9dbf0d4 = L.polyline(
+                [[13.808385, 101.190527], [13.808302, 101.190578], [13.808169, 101.19064], [13.808051, 101.190687], [13.807913, 101.190734], [13.807745, 101.190773], [13.807535, 101.190787], [13.807375, 101.190777], [13.806166, 101.190607], [13.805086, 101.190423], [13.803585, 101.190168], [13.803432, 101.190154], [13.803273, 101.190149], [13.802928, 101.190152], [13.802787, 101.190164], [13.802698, 101.190172], [13.802623, 101.190179], [13.802103, 101.190266], [13.801569, 101.190405], [13.801531, 101.190423], [13.801381, 101.190494], [13.801148, 101.190636], [13.800939, 101.190809], [13.800893, 101.190853], [13.80078, 101.190963], [13.800752, 101.190997], [13.800575, 101.191208], [13.800372, 101.191496], [13.800237, 101.19171], [13.800174, 101.191836], [13.80013, 101.191956], [13.800091, 101.192097], [13.800075, 101.19217], [13.800053, 101.192268], [13.800011, 101.192586], [13.800001, 101.192656], [13.799935, 101.193119], [13.799914, 101.193259], [13.799895, 101.193396], [13.799872, 101.193556], [13.799813, 101.193965], [13.799808, 101.194009], [13.799767, 101.194354], [13.799738, 101.194605], [13.799718, 101.194773], [13.799669, 101.195198], [13.799665, 101.195229], [13.799646, 101.195391], [13.79961, 101.195703], [13.799594, 101.195836], [13.799583, 101.195936], [13.799577, 101.19599], [13.799547, 101.196317], [13.799545, 101.196347], [13.799534, 101.196659], [13.799532, 101.196898], [13.799532, 101.197043], [13.799525, 101.19794], [13.799522, 101.198289], [13.799516, 101.198703], [13.799513, 101.198975], [13.799501, 101.199155], [13.799479, 101.199296], [13.799445, 101.199425], [13.799402, 101.199583], [13.799349, 101.199709], [13.799276, 101.199792], [13.799191, 101.19987], [13.799057, 101.199976], [13.798899, 101.200081], [13.798794, 101.200138], [13.798568, 101.200211], [13.79838, 101.200266], [13.798152, 101.200319], [13.797713, 101.200427], [13.797004, 101.2006], [13.796485, 101.200725], [13.795898, 101.200831], [13.795655, 101.200869], [13.795409, 101.200893], [13.795251, 101.200908], [13.79461, 101.200922], [13.793299, 101.200939], [13.792207, 101.20095], [13.791094, 101.200959], [13.790768, 101.200962], [13.79059, 101.200964], [13.790447, 101.200964], [13.790142, 101.200964], [13.789472, 101.201], [13.789038, 101.201063], [13.788997, 101.201068], [13.788595, 101.201147], [13.788545, 101.20116], [13.78837, 101.201205], [13.788102, 101.201273], [13.787894, 101.20134], [13.787498, 101.201489], [13.787364, 101.201544], [13.78696, 101.201753], [13.785203, 101.202666], [13.78495, 101.202797], [13.784604, 101.20268], [13.78402, 101.202482], [13.783903, 101.202443], [13.783525, 101.202315], [13.782943, 101.202118], [13.78274, 101.202049], [13.782637, 101.202016], [13.782606, 101.202005], [13.782522, 101.201978], [13.782497, 101.20197], [13.782301, 101.201905], [13.781939, 101.201793], [13.781775, 101.201793], [13.781541, 101.201862], [13.78111, 101.202073], [13.780731, 101.202259], [13.780675, 101.202286], [13.780571, 101.202339], [13.780299, 101.202476], [13.780062, 101.20259], [13.779915, 101.202661], [13.779583, 101.202821], [13.779514, 101.202855], [13.779298, 101.202967], [13.779022, 101.203116], [13.778922, 101.203248], [13.778902, 101.203405], [13.778923, 101.203662], [13.778948, 101.203909], [13.778959, 101.204016], [13.778945, 101.204124], [13.778926, 101.204271], [13.778834, 101.204571], [13.778723, 101.20482], [13.778688, 101.204897], [13.7786, 101.205001], [13.778495, 101.205057], [13.778235, 101.205116], [13.778176, 101.205117], [13.777765, 101.205114], [13.777414, 101.205116], [13.777351, 101.205125], [13.777154, 101.205153], [13.777054, 101.205167], [13.776791, 101.205205], [13.776711, 101.205216], [13.776442, 101.205264], [13.776353, 101.20528], [13.776223, 101.205303], [13.775984, 101.205348], [13.775923, 101.20536], [13.775841, 101.205376], [13.775275, 101.205488], [13.774981, 101.205545], [13.774769, 101.205586], [13.774184, 101.205698], [13.774105, 101.205713], [13.773582, 101.205814], [13.773223, 101.205883], [13.772956, 101.205935], [13.772916, 101.205942], [13.772469, 101.206029], [13.772375, 101.206047], [13.77227, 101.206066], [13.771892, 101.206137], [13.771602, 101.206191], [13.771095, 101.206286], [13.770683, 101.206364], [13.769403, 101.206603], [13.769247, 101.206632], [13.768994, 101.206679], [13.768224, 101.206823], [13.766926, 101.207065], [13.766444, 101.207155], [13.766304, 101.207181], [13.766026, 101.207233], [13.76573, 101.207288], [13.765582, 101.207316], [13.764373, 101.207542], [13.764137, 101.207586], [13.763312, 101.20774], [13.762504, 101.207891], [13.762461, 101.207897], [13.762285, 101.207932], [13.761543, 101.208073], [13.761071, 101.208163], [13.760838, 101.208207], [13.760494, 101.208272], [13.760114, 101.208345], [13.759884, 101.208388], [13.758957, 101.208555], [13.758714, 101.208597], [13.758605, 101.208616], [13.758134, 101.208651], [13.757419, 101.20863], [13.757236, 101.208624], [13.756336, 101.208595], [13.755217, 101.208568], [13.754536, 101.208551], [13.754212, 101.208544], [13.753853, 101.208537], [13.753801, 101.208536], [13.752138, 101.208501], [13.751705, 101.208492], [13.750954, 101.208477], [13.750772, 101.208475], [13.749863, 101.208456], [13.749636, 101.208451], [13.748909, 101.208439], [13.74836, 101.208429], [13.748192, 101.208425], [13.747268, 101.208406], [13.746862, 101.208398], [13.746671, 101.208388], [13.746126, 101.208365], [13.746032, 101.208362], [13.744512, 101.208213], [13.744256, 101.208182], [13.744083, 101.208179], [13.74392, 101.208195], [13.743844, 101.208221], [13.743721, 101.208315], [13.743677, 101.208357], [13.743547, 101.208485], [13.742966, 101.209147], [13.742873, 101.209253], [13.742562, 101.209608], [13.742283, 101.209926], [13.742147, 101.210092], [13.74207, 101.210206], [13.742046, 101.21026], [13.742012, 101.210337], [13.741759, 101.211164], [13.741728, 101.211264], [13.741697, 101.211413], [13.741692, 101.211457], [13.741683, 101.21154], [13.741662, 101.212002], [13.741639, 101.212485], [13.741632, 101.212655], [13.741601, 101.213254], [13.741591, 101.213463], [13.741589, 101.21349], [13.741566, 101.213673], [13.741558, 101.21373], [13.741499, 101.213891], [13.741465, 101.213972], [13.741381, 101.21408], [13.741254, 101.214171], [13.741058, 101.214241], [13.740844, 101.214278], [13.740631, 101.214273], [13.740334, 101.214232], [13.739258, 101.214056], [13.738741, 101.213956], [13.737697, 101.2137], [13.737292, 101.213569], [13.737089, 101.213497], [13.736315, 101.213212], [13.734157, 101.212267], [13.734067, 101.212229], [13.732696, 101.21166], [13.732634, 101.211638], [13.732549, 101.211604], [13.73197, 101.211381], [13.731842, 101.211312], [13.731405, 101.211113], [13.73047, 101.210709], [13.729812, 101.210417], [13.729466, 101.210258], [13.728911, 101.209986], [13.728899, 101.209979], [13.728794, 101.209914], [13.728718, 101.209867], [13.728637, 101.209804], [13.728381, 101.209604], [13.728223, 101.209482], [13.728114, 101.209397], [13.727805, 101.209159], [13.727552, 101.208921], [13.727324, 101.208652], [13.727268, 101.208593], [13.72713, 101.208446], [13.726671, 101.207978], [13.726415, 101.207723], [13.726234, 101.207516], [13.726194, 101.207471], [13.725745, 101.206998], [13.725689, 101.206939], [13.72559, 101.206835], [13.725263, 101.206495], [13.725169, 101.206389], [13.725096, 101.206294], [13.724964, 101.206161], [13.724774, 101.205949], [13.724762, 101.205937], [13.724668, 101.205846], [13.724577, 101.205758], [13.724321, 101.205509], [13.724221, 101.205556], [13.72414, 101.205584], [13.723695, 101.20574], [13.723497, 101.205809], [13.723458, 101.205823], [13.723382, 101.205849], [13.722682, 101.206091], [13.722489, 101.206158], [13.722379, 101.206203], [13.722063, 101.20633], [13.722006, 101.206354], [13.721962, 101.206363], [13.721911, 101.206361], [13.721823, 101.206393], [13.721602, 101.206472], [13.721366, 101.206543], [13.72131, 101.206589], [13.72125, 101.206618], [13.720978, 101.206706], [13.720895, 101.206735], [13.720709, 101.206798], [13.72041, 101.206901], [13.720112, 101.207011], [13.719661, 101.207178], [13.718253, 101.207682], [13.717731, 101.207864], [13.717033, 101.208107], [13.716395, 101.208329], [13.715506, 101.208638], [13.714757, 101.208891], [13.71425, 101.209071], [13.713793, 101.209234], [13.713754, 101.209248], [13.713514, 101.209331], [13.712908, 101.209541], [13.711302, 101.210098], [13.710554, 101.210353], [13.710223, 101.210467], [13.709341, 101.210773], [13.708907, 101.210917], [13.70857, 101.21103], [13.708011, 101.211216], [13.707936, 101.211242], [13.707761, 101.211304], [13.707643, 101.211348], [13.707326, 101.211465], [13.707006, 101.211584], [13.70669, 101.211707], [13.705263, 101.21226], [13.704478, 101.212566], [13.704091, 101.212718], [13.703759, 101.212848], [13.703504, 101.212941], [13.703072, 101.213089], [13.703002, 101.213113], [13.702257, 101.21336], [13.701179, 101.213689], [13.698492, 101.214504], [13.698075, 101.214628], [13.69764, 101.214756], [13.695414, 101.215434], [13.695008, 101.215558], [13.694572, 101.21569], [13.693736, 101.215945], [13.693206, 101.216106], [13.692821, 101.216223], [13.692539, 101.21631], [13.691222, 101.216703], [13.690377, 101.216966], [13.689512, 101.217235], [13.687637, 101.217781], [13.684617, 101.218672], [13.68371, 101.218944], [13.682151, 101.219397], [13.68115, 101.219703], [13.678006, 101.220639], [13.677714, 101.220726], [13.676584, 101.221062], [13.675815, 101.221291], [13.675061, 101.221515], [13.674865, 101.221581], [13.674731, 101.221701], [13.674706, 101.221857], [13.67466, 101.221925], [13.674621, 101.221984], [13.674439, 101.22209], [13.674262, 101.222103], [13.674111, 101.222052], [13.674013, 101.221953], [13.673945, 101.221807], [13.673913, 101.221671], [13.673929, 101.221573], [13.673939, 101.221514], [13.673992, 101.221449], [13.673955, 101.221164], [13.673845, 101.220675], [13.673739, 101.2202], [13.673167, 101.217378], [13.673003, 101.216568], [13.672979, 101.216453], [13.672904, 101.21585], [13.672758, 101.21487], [13.672516, 101.213411], [13.672372, 101.212764], [13.672326, 101.212539], [13.671501, 101.208147], [13.671466, 101.207978], [13.670859, 101.205284], [13.670579, 101.203939], [13.670558, 101.20383], [13.670381, 101.202911], [13.670319, 101.202587], [13.670288, 101.202413], [13.670163, 101.201808], [13.669888, 101.200472], [13.66977, 101.199909], [13.669168, 101.197152], [13.668852, 101.195654], [13.668831, 101.195557], [13.668682, 101.194776], [13.668524, 101.194043], [13.668427, 101.193637], [13.66831, 101.193146], [13.668284, 101.193039], [13.668193, 101.192586], [13.668148, 101.192323], [13.668062, 101.191873], [13.667999, 101.191616], [13.667862, 101.190897], [13.66761, 101.189768], [13.667553, 101.189481], [13.667178, 101.187678], [13.667119, 101.187394], [13.666937, 101.186516], [13.666691, 101.185335], [13.666595, 101.184871], [13.666474, 101.184291], [13.666106, 101.182518], [13.666075, 101.182368], [13.665754, 101.180852], [13.665293, 101.178947], [13.66442, 101.174862], [13.664099, 101.172983], [13.663727, 101.171299], [13.663515, 101.170342], [13.663415, 101.169757], [13.663321, 101.16926], [13.663074, 101.168192], [13.663037, 101.16804], [13.662273, 101.164301], [13.662171, 101.163897], [13.6621, 101.163551], [13.662008, 101.163055], [13.661945, 101.162769], [13.661858, 101.1624], [13.66173, 101.161691], [13.661661, 101.161308], [13.661453, 101.160322], [13.661159, 101.158928], [13.660872, 101.157795], [13.660591, 101.156445], [13.660221, 101.154446], [13.660153, 101.15409], [13.660059, 101.153724], [13.659752, 101.152328], [13.659648, 101.151939], [13.659509, 101.15132], [13.659292, 101.150192], [13.659136, 101.149547], [13.658961, 101.148683], [13.658906, 101.14844], [13.658806, 101.147968], [13.658731, 101.147686], [13.658559, 101.147023], [13.658334, 101.146146], [13.658312, 101.145729], [13.657774, 101.143318], [13.657734, 101.143149], [13.657458, 101.142079], [13.657288, 101.141269], [13.656965, 101.139695], [13.656741, 101.138624], [13.656592, 101.137583], [13.65659, 101.137076], [13.656665, 101.136392], [13.657101, 101.134217], [13.657575, 101.132027], [13.657698, 101.131339], [13.657958, 101.130078], [13.658294, 101.128528], [13.658443, 101.127863], [13.65904, 101.125183], [13.659775, 101.12186], [13.660661, 101.117673], [13.660881, 101.116692], [13.66101, 101.116118], [13.661174, 101.115308], [13.661414, 101.114192], [13.661641, 101.113124], [13.66186, 101.111909], [13.662517, 101.108363], [13.662926, 101.106287], [13.663046, 101.105606], [13.663111, 101.104978], [13.663095, 101.104517], [13.663035, 101.104013], [13.66264, 101.101913], [13.662454, 101.100928], [13.661809, 101.097726], [13.661444, 101.096065], [13.661248, 101.095119], [13.660974, 101.093889], [13.660965, 101.09384], [13.660733, 101.092839], [13.660687, 101.092579], [13.660624, 101.09226], [13.66057, 101.091968], [13.660556, 101.091923], [13.660362, 101.09095], [13.660317, 101.09075], [13.660158, 101.089838], [13.659795, 101.088134], [13.659547, 101.086958], [13.659481, 101.086647], [13.65917, 101.084999], [13.659055, 101.084277], [13.659003, 101.083474], [13.659031, 101.079548], [13.659074, 101.073725], [13.65913, 101.066], [13.659132, 101.065791], [13.659125, 101.063661], [13.659145, 101.061006], [13.659149, 101.058788], [13.659147, 101.058418], [13.65915, 101.058122], [13.659174, 101.055428], [13.659099, 101.053385], [13.659065, 101.053224], [13.659064, 101.053101], [13.659069, 101.052907], [13.659071, 101.05274], [13.659069, 101.052604], [13.659064, 101.05195], [13.65906, 101.051523], [13.659067, 101.051268], [13.659071, 101.050601], [13.659075, 101.050397], [13.659074, 101.050143], [13.659082, 101.04955], [13.659086, 101.049203], [13.659095, 101.048977], [13.659091, 101.048888], [13.659079, 101.048784], [13.659058, 101.048726], [13.659022, 101.048654], [13.658973, 101.048589], [13.658856, 101.048478], [13.658807, 101.048468], [13.658587, 101.048427], [13.657655, 101.048254], [13.657264, 101.048185], [13.65661, 101.048066], [13.655769, 101.047914], [13.654946, 101.047755], [13.654292, 101.047632], [13.654007, 101.047568], [13.652532, 101.047236], [13.651788, 101.047068], [13.650564, 101.046791], [13.649797, 101.046619], [13.649622, 101.046579], [13.649352, 101.046526], [13.648951, 101.046448], [13.648623, 101.046383], [13.647816, 101.046226], [13.647281, 101.046104], [13.646801, 101.045931], [13.646422, 101.04578], [13.646006, 101.045575], [13.645621, 101.045357], [13.64547, 101.045271], [13.645373, 101.045216], [13.644946, 101.04497], [13.644727, 101.044844], [13.644259, 101.044575], [13.643681, 101.044243], [13.643508, 101.044144], [13.643096, 101.043906], [13.642859, 101.04377], [13.642224, 101.043405], [13.642015, 101.043285], [13.641308, 101.042878], [13.640947, 101.04267], [13.640802, 101.042587], [13.640637, 101.042492], [13.640084, 101.042177], [13.639525, 101.041858], [13.638589, 101.041324], [13.637898, 101.04093], [13.636533, 101.040156], [13.635833, 101.039759], [13.633719, 101.03856], [13.632921, 101.038105], [13.632349, 101.037769], [13.630781, 101.036847], [13.630544, 101.036708], [13.630444, 101.036649], [13.628484, 101.0355], [13.627835, 101.035119], [13.627767, 101.035079], [13.627717, 101.035048], [13.627477, 101.034903], [13.626891, 101.034563], [13.626399, 101.034278], [13.625867, 101.03397], [13.625457, 101.033732], [13.624577, 101.033221], [13.624488, 101.033169], [13.624308, 101.033065], [13.62418, 101.032991], [13.62355, 101.032625], [13.623296, 101.032478], [13.623188, 101.032415], [13.622959, 101.032282], [13.622742, 101.032156], [13.622357, 101.031937], [13.622307, 101.031908], [13.621974, 101.031716], [13.621512, 101.031451], [13.621084, 101.031206], [13.620702, 101.030987], [13.620334, 101.030776], [13.620074, 101.03064], [13.619839, 101.030503], [13.619597, 101.030363], [13.618503, 101.029729], [13.618023, 101.029451], [13.616706, 101.028687], [13.615953, 101.02825], [13.615187, 101.0278], [13.615011, 101.0277], [13.614787, 101.027572], [13.614304, 101.027295], [13.61422, 101.027247], [13.612784, 101.026423], [13.612568, 101.026299], [13.61213, 101.026047], [13.612035, 101.025993], [13.611969, 101.025955], [13.611455, 101.02565], [13.611165, 101.025477], [13.611119, 101.025448], [13.610838, 101.025286], [13.610758, 101.02524], [13.610308, 101.024979], [13.61021, 101.024922], [13.610078, 101.024846], [13.609585, 101.02456], [13.609008, 101.024225], [13.608612, 101.023996], [13.608163, 101.023733], [13.60782, 101.023532], [13.607192, 101.023164], [13.606821, 101.022947], [13.606426, 101.022716], [13.605425, 101.022142], [13.605225, 101.022026], [13.604998, 101.021895], [13.604468, 101.021582], [13.604361, 101.021519], [13.604019, 101.021317], [13.603477, 101.020998], [13.603137, 101.020799], [13.602792, 101.020597], [13.602258, 101.020285], [13.602075, 101.020177], [13.601969, 101.020115], [13.601794, 101.020013], [13.601643, 101.019925], [13.601529, 101.019858], [13.601368, 101.019763], [13.601011, 101.019553], [13.600634, 101.019331], [13.600305, 101.019137], [13.598212, 101.017879], [13.597641, 101.017538], [13.597406, 101.017403], [13.59693, 101.017132], [13.596771, 101.017027], [13.596164, 101.016669], [13.596009, 101.016578], [13.594492, 101.015661], [13.594414, 101.015614], [13.594263, 101.015523], [13.594008, 101.015368], [13.593641, 101.015145], [13.593337, 101.014978], [13.593062, 101.014812], [13.59278, 101.014644], [13.592353, 101.0144], [13.592176, 101.014291], [13.591797, 101.014076], [13.591509, 101.013912], [13.591253, 101.013761], [13.591102, 101.013669], [13.591017, 101.013616], [13.590316, 101.013179], [13.589776, 101.012877], [13.589051, 101.012438], [13.58871, 101.012232], [13.588603, 101.01216], [13.588286, 101.011967], [13.587288, 101.011367], [13.587147, 101.011285], [13.586883, 101.01113], [13.585982, 101.010591], [13.58552, 101.010315], [13.585024, 101.010018], [13.584849, 101.009914], [13.583756, 101.009263], [13.583575, 101.009155], [13.583383, 101.009036], [13.582779, 101.008678], [13.582695, 101.008628], [13.582668, 101.008612], [13.580971, 101.0076], [13.580466, 101.007302], [13.580389, 101.007257], [13.580296, 101.007203], [13.578665, 101.006269], [13.578536, 101.006186], [13.576717, 101.005078], [13.576632, 101.005026], [13.576552, 101.004978], [13.576341, 101.004849], [13.57618, 101.004751], [13.576015, 101.004651], [13.575705, 101.004462], [13.575299, 101.004215], [13.575081, 101.004082], [13.574749, 101.00388], [13.574209, 101.003552], [13.573744, 101.003269], [13.573501, 101.00312], [13.573143, 101.002902], [13.572983, 101.002804], [13.572487, 101.002503], [13.572131, 101.002287], [13.572091, 101.002262], [13.571338, 101.001787], [13.57094, 101.001537], [13.570557, 101.001308], [13.570423, 101.001227], [13.570231, 101.001113], [13.569986, 101.000966], [13.569801, 101.000855], [13.56843, 101.000036], [13.56812, 100.99985], [13.567657, 100.999573], [13.565171, 100.998112], [13.564774, 100.997873], [13.564449, 100.997678], [13.564105, 100.997471], [13.564035, 100.997429], [13.563773, 100.997284], [13.563484, 100.997112], [13.563358, 100.997037], [13.562891, 100.996759], [13.562579, 100.996573], [13.562486, 100.996518], [13.561834, 100.99613], [13.561439, 100.995895], [13.560413, 100.995282], [13.560278, 100.995201], [13.559235, 100.994595], [13.557737, 100.993635], [13.557246, 100.993328], [13.557074, 100.993226], [13.556127, 100.992677], [13.555721, 100.992436], [13.554848, 100.991935], [13.554514, 100.991717], [13.554214, 100.991552], [13.553949, 100.991401], [13.553184, 100.990964], [13.552947, 100.990848], [13.552721, 100.990732], [13.552483, 100.990646], [13.551544, 100.990505], [13.551143, 100.990462], [13.550567, 100.9904], [13.548823, 100.990179], [13.548696, 100.990169], [13.548047, 100.990103], [13.547781, 100.990064], [13.547669, 100.990051], [13.546974, 100.989974], [13.546258, 100.989895], [13.546065, 100.989869], [13.545983, 100.98986], [13.545743, 100.98983], [13.545524, 100.989805], [13.545013, 100.989741], [13.543643, 100.989569], [13.542947, 100.989482], [13.542927, 100.989479], [13.542397, 100.989408], [13.542341, 100.9894], [13.541044, 100.989277], [13.540598, 100.989246], [13.539639, 100.989144], [13.539111, 100.98917], [13.538723, 100.989291], [13.538383, 100.989458], [13.537573, 100.990077], [13.537163, 100.99039], [13.537149, 100.990402], [13.536843, 100.990623], [13.53675, 100.990695], [13.536313, 100.991027], [13.535249, 100.991858], [13.534889, 100.992045], [13.534641, 100.992123], [13.534511, 100.992165], [13.533678, 100.992227], [13.532603, 100.992307], [13.531953, 100.992343], [13.531409, 100.992309], [13.530866, 100.992299], [13.528393, 100.992189], [13.527578, 100.992161], [13.526387, 100.9921], [13.526352, 100.992098], [13.52599, 100.992081], [13.525238, 100.992046], [13.523138, 100.991949], [13.519098, 100.991756], [13.51858, 100.99172], [13.518266, 100.991674], [13.517983, 100.991599], [13.517701, 100.99149], [13.517355, 100.991301], [13.517086, 100.991145], [13.515323, 100.990123], [13.514939, 100.989874], [13.514635, 100.989659], [13.51437, 100.989399], [13.51412, 100.989095], [13.513422, 100.988126], [13.513278, 100.987993], [13.513167, 100.987927], [13.513038, 100.987881], [13.512877, 100.987878], [13.512576, 100.98797], [13.512074, 100.988354], [13.510497, 100.989599], [13.510407, 100.989723], [13.509524, 100.990369], [13.509307, 100.9906], [13.508938, 100.991046], [13.50829, 100.992045], [13.507784, 100.992826], [13.507771, 100.992846], [13.507028, 100.994056], [13.506759, 100.994493], [13.506696, 100.994592], [13.506481, 100.994931], [13.506209, 100.995358], [13.504855, 100.997491], [13.504508, 100.99802], [13.504348, 100.998264], [13.504227, 100.998448], [13.503674, 100.999291], [13.503384, 100.999733], [13.502221, 101.001558], [13.502034, 101.001825], [13.501744, 101.002243], [13.501559, 101.002484], [13.501428, 101.002663], [13.501074, 101.003061], [13.500713, 101.003432], [13.500419, 101.003718], [13.500324, 101.00381], [13.499921, 101.004143], [13.499498, 101.00446], [13.499065, 101.004765], [13.499003, 101.004809], [13.498936, 101.004847], [13.498528, 101.005082], [13.498078, 101.005325], [13.497547, 101.005565], [13.497319, 101.005649], [13.497071, 101.005666], [13.496859, 101.005747], [13.496372, 101.005877], [13.496061, 101.005967], [13.495838, 101.006003], [13.495605, 101.006048], [13.49519, 101.006133], [13.495012, 101.006151], [13.49423, 101.006235], [13.493453, 101.006235], [13.492921, 101.006196], [13.492712, 101.006187], [13.491825, 101.006042], [13.491723, 101.006012], [13.491147, 101.005876], [13.490511, 101.005661], [13.490269, 101.005568], [13.489725, 101.005366], [13.488008, 101.00475], [13.484346, 101.003363], [13.479578, 101.001547], [13.479394, 101.001482], [13.478622, 101.001179], [13.478371, 101.00108], [13.477967, 101.000923], [13.477792, 101.000851], [13.477088, 101.000586], [13.475612, 101.000029], [13.47479, 100.999702], [13.473138, 100.999087], [13.472978, 100.999026], [13.471819, 100.998576], [13.469707, 100.997797], [13.466451, 100.996547], [13.466185, 100.996451], [13.465272, 100.996161], [13.464474, 100.995995], [13.464243, 100.995955], [13.463857, 100.995905], [13.463639, 100.995887], [13.46282, 100.99592], [13.462123, 100.99597], [13.461776, 100.996027], [13.461584, 100.996059], [13.460194, 100.996338], [13.454893, 100.997478], [13.451911, 100.998119], [13.450419, 100.998457], [13.448751, 100.998822], [13.446096, 100.999429], [13.445247, 100.999623], [13.441869, 101.000385], [13.434366, 101.002049], [13.434169, 101.002092], [13.430947, 101.002808], [13.430353, 101.002949], [13.430101, 101.002996], [13.429865, 101.003031], [13.429641, 101.00305], [13.429372, 101.003064], [13.429048, 101.003061], [13.428738, 101.00303], [13.428404, 101.002984], [13.428122, 101.002929], [13.427833, 101.002854], [13.427547, 101.002762], [13.427235, 101.002645], [13.426885, 101.002477], [13.426586, 101.002308], [13.426257, 101.002078], [13.425934, 101.001826], [13.423601, 100.999689], [13.421656, 100.997924], [13.420792, 100.997137], [13.416495, 100.993258], [13.416279, 100.993061], [13.41594, 100.992747], [13.415645, 100.992475], [13.415254, 100.992114], [13.414889, 100.991776], [13.414192, 100.991132], [13.413823, 100.990831], [13.413286, 100.990461], [13.4126, 100.990084], [13.412104, 100.989875], [13.411638, 100.989739], [13.411306, 100.989666], [13.411215, 100.989646], [13.411099, 100.989621], [13.409508, 100.9894], [13.408116, 100.989207], [13.407486, 100.989117], [13.406844, 100.989031], [13.406734, 100.989016], [13.404394, 100.988698], [13.404148, 100.988665], [13.403235, 100.988541], [13.402529, 100.988454], [13.402519, 100.988453], [13.401614, 100.988351], [13.39981, 100.988122], [13.398871, 100.988003], [13.398685, 100.988003], [13.398587, 100.987992], [13.397222, 100.98783], [13.396368, 100.987723], [13.395675, 100.987637], [13.394662, 100.98751], [13.394148, 100.987466], [13.393236, 100.987306], [13.392963, 100.98729], [13.39284, 100.987282], [13.39262, 100.987269], [13.392268, 100.987279], [13.391695, 100.987289], [13.391035, 100.987341], [13.390385, 100.987425], [13.389802, 100.987542], [13.389225, 100.987698], [13.389184, 100.987709], [13.388629, 100.987886], [13.38843, 100.987962], [13.388299, 100.988011], [13.38809, 100.988093], [13.387651, 100.988277], [13.387267, 100.988452], [13.386966, 100.988617], [13.386433, 100.988927], [13.385743, 100.989371], [13.385456, 100.989556], [13.384434, 100.990214], [13.383967, 100.990514], [13.382866, 100.991223], [13.382804, 100.991263], [13.382479, 100.99147], [13.382136, 100.99164], [13.381744, 100.991804], [13.38134, 100.991938], [13.381079, 100.992021], [13.380971, 100.992055], [13.380618, 100.992137], [13.380409, 100.992185], [13.379986, 100.992282], [13.379085, 100.992489], [13.378141, 100.992701], [13.377795, 100.992778], [13.377778, 100.992782], [13.377754, 100.992787], [13.377301, 100.992888], [13.377297, 100.99289], [13.377058, 100.992943], [13.376769, 100.993008], [13.376533, 100.993061], [13.376407, 100.993082], [13.376308, 100.993108], [13.376194, 100.993132], [13.375843, 100.993166], [13.375586, 100.993171], [13.375509, 100.993172], [13.375154, 100.993154], [13.374557, 100.993094], [13.374185, 100.993051], [13.373678, 100.993003], [13.373627, 100.992998], [13.373189, 100.992956], [13.373024, 100.99294], [13.372899, 100.992928], [13.371277, 100.992774], [13.371152, 100.992764], [13.371013, 100.992749], [13.370808, 100.992728], [13.370639, 100.992727], [13.370641, 100.992694]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_c9f7c9190ef0956eb23e3e98d9dbf0d4.bindTooltip(
+                `<div>
+                     Leg 22: P11 → LAST_STOP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_67319b28439440dc44ef58317f4a2bf5 = L.polyline(
+                [[13.370641, 100.992694], [13.370645, 100.992617], [13.370739, 100.992622], [13.370808, 100.992728], [13.370639, 100.992727], [13.370411, 100.992683], [13.369627, 100.992379], [13.36933, 100.992263], [13.368909, 100.9921], [13.368412, 100.991907], [13.367785, 100.991664], [13.367531, 100.991567], [13.367049, 100.991382], [13.366965, 100.991356], [13.366071, 100.991014], [13.365675, 100.990866], [13.365643, 100.990854], [13.364984, 100.990596], [13.364862, 100.990552], [13.364367, 100.990376], [13.363761, 100.990146], [13.363607, 100.990088], [13.36323, 100.989936], [13.362106, 100.989519], [13.36179, 100.989397], [13.361236, 100.989183], [13.361142, 100.989126], [13.360171, 100.988384], [13.360105, 100.988333], [13.359619, 100.987968], [13.359335, 100.987755], [13.357734, 100.98655], [13.357582, 100.98644], [13.357256, 100.986195], [13.356774, 100.985834], [13.356441, 100.985584], [13.356089, 100.985311], [13.355801, 100.985064], [13.355586, 100.98486], [13.355157, 100.984385], [13.354399, 100.983548], [13.354184, 100.983307], [13.353937, 100.98303], [13.353639, 100.982722], [13.353397, 100.982506], [13.353166, 100.98233], [13.353123, 100.982298], [13.352929, 100.982156], [13.352856, 100.982102], [13.352489, 100.981859], [13.352235, 100.981693], [13.351988, 100.98153], [13.351267, 100.981057], [13.349651, 100.979997], [13.349556, 100.979935], [13.349432, 100.979851], [13.349305, 100.979768], [13.348115, 100.978989], [13.347158, 100.978362], [13.346715, 100.978071], [13.346463, 100.977907], [13.346154, 100.977704], [13.345965, 100.97758], [13.345833, 100.977494], [13.345238, 100.977104], [13.344604, 100.976689], [13.343869, 100.976209], [13.343553, 100.976007], [13.342973, 100.975636], [13.341789, 100.974878], [13.341688, 100.974814], [13.341087, 100.974435], [13.340682, 100.97418], [13.340522, 100.974076], [13.339801, 100.973607], [13.339656, 100.973512], [13.339122, 100.973165], [13.338177, 100.972598], [13.338036, 100.972514], [13.337933, 100.972452], [13.337565, 100.972232], [13.336907, 100.971818], [13.336798, 100.971752], [13.336576, 100.971611], [13.336169, 100.971354], [13.335862, 100.97116], [13.335748, 100.971088], [13.335549, 100.970964], [13.33502, 100.970648], [13.333822, 100.969863], [13.332035, 100.968738], [13.331462, 100.968339], [13.331005, 100.968051], [13.330785, 100.967912], [13.330643, 100.967822], [13.330514, 100.967739], [13.330401, 100.967666], [13.33028, 100.967588], [13.330053, 100.967441], [13.329894, 100.967338], [13.329806, 100.967281], [13.329702, 100.967214], [13.329597, 100.967146], [13.329192, 100.966883], [13.329052, 100.966798], [13.329032, 100.966785], [13.328407, 100.966377], [13.328244, 100.966272], [13.328089, 100.966174], [13.327781, 100.965955], [13.32769, 100.965899], [13.327078, 100.96552], [13.325498, 100.964496], [13.324639, 100.963934], [13.324317, 100.963773], [13.32404, 100.963608], [13.322925, 100.96288], [13.322815, 100.962807], [13.322772, 100.96278], [13.322665, 100.962714], [13.321085, 100.961645], [13.320902, 100.961527], [13.320791, 100.961455], [13.320463, 100.961243], [13.320242, 100.9611], [13.319095, 100.960359], [13.317943, 100.95965], [13.317213, 100.959196], [13.316911, 100.959012], [13.316802, 100.958945], [13.31614, 100.958542], [13.315999, 100.958385], [13.315854, 100.958276], [13.315003, 100.957703], [13.314963, 100.957675], [13.314905, 100.957635], [13.314841, 100.957592], [13.314798, 100.957563], [13.314002, 100.957063], [13.313798, 100.956937], [13.313595, 100.956812], [13.313066, 100.956474], [13.312861, 100.956361], [13.312751, 100.95632], [13.311844, 100.955729], [13.311242, 100.955341], [13.310916, 100.955126], [13.310488, 100.954843], [13.310125, 100.954596], [13.309755, 100.954359], [13.309371, 100.954112], [13.309108, 100.953944], [13.308876, 100.953795], [13.308673, 100.953665], [13.308194, 100.953358], [13.308087, 100.953293], [13.30784, 100.95312], [13.307558, 100.952939], [13.307498, 100.9529], [13.307463, 100.952879], [13.307234, 100.95273], [13.306691, 100.952386], [13.306369, 100.952195], [13.306259, 100.952102], [13.306173, 100.952047], [13.305108, 100.95136], [13.304773, 100.951146], [13.304699, 100.951098], [13.303882, 100.950573], [13.303657, 100.950428], [13.303455, 100.950299], [13.301654, 100.949147], [13.3009, 100.948664], [13.299659, 100.947847], [13.299344, 100.947639], [13.299138, 100.947506], [13.298737, 100.947245], [13.298325, 100.946985], [13.298007, 100.946795], [13.297869, 100.946713], [13.297423, 100.946447], [13.297191, 100.946309], [13.296758, 100.946051], [13.296337, 100.945769], [13.295821, 100.945442], [13.295615, 100.945311], [13.295193, 100.945044], [13.29509, 100.944978], [13.294133, 100.944356], [13.292108, 100.943039], [13.291853, 100.942877], [13.291106, 100.9424], [13.29073, 100.942144], [13.289992, 100.941667], [13.289489, 100.941328], [13.288479, 100.940648], [13.288242, 100.940486], [13.287845, 100.940213], [13.287614, 100.940061], [13.287328, 100.93986], [13.287228, 100.93979], [13.2871, 100.939698], [13.286557, 100.939333], [13.286485, 100.93928], [13.286376, 100.939207], [13.286467, 100.939071], [13.286599, 100.938843], [13.286781, 100.938517], [13.286911, 100.938243], [13.286982, 100.938041], [13.287017, 100.937886], [13.287038, 100.937726], [13.287056, 100.937543], [13.287061, 100.937433], [13.287066, 100.937324], [13.287061, 100.937108], [13.287059, 100.937019], [13.287056, 100.936876], [13.287014, 100.935307], [13.286951, 100.933175], [13.286923, 100.93199], [13.286886, 100.930867], [13.28685, 100.929171], [13.286826, 100.928903], [13.286791, 100.928644], [13.286737, 100.928327], [13.286674, 100.928022], [13.286637, 100.927858], [13.286574, 100.927531], [13.286482, 100.92706], [13.286348, 100.926366], [13.286159, 100.925398], [13.286142, 100.92531], [13.286125, 100.925218], [13.286046, 100.924798], [13.286023, 100.924673], [13.285755, 100.923249], [13.285681, 100.923264], [13.285604, 100.923276], [13.285451, 100.923304], [13.285392, 100.923314], [13.284894, 100.923414], [13.284844, 100.923424], [13.284651, 100.923463], [13.283647, 100.92365], [13.283346, 100.923709], [13.283271, 100.923715], [13.283245, 100.923716], [13.283178, 100.923712], [13.283194, 100.923634], [13.283192, 100.92348], [13.283186, 100.923435]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d03551a0a5a00781975ef69c9b7e7fc1);
+        
+    
+            poly_line_67319b28439440dc44ef58317f4a2bf5.bindTooltip(
+                `<div>
+                     Leg 23: LAST_STOP → Depot(End)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            map_d03551a0a5a00781975ef69c9b7e7fc1.fitBounds(
+                [[13.283248, 100.8998333], [13.896869, 101.1909167]],
+                {}
+            );
+        
+</script>
+</html>
